@@ -10,7 +10,7 @@ public class PosicaoTamanho {
     @Test
     public void teste() {
 
-        System.setProperty("webdriver.gecko.driver", "/home/alencar/www/Selenium/geckodriver/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\andre\\www\\drivers\\Selenium\\geckodriver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
 
         // Pegando a posição do Browser

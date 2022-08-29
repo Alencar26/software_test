@@ -10,7 +10,7 @@ public class TesteCaixasTexto {
     final String PATH_WEB_PAGE = "file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html";
 
     public WebDriver instanciarNavegador(String path) {
-        System.setProperty("webdriver.gecko.driver", "/home/alencar/www/Selenium/geckodriver/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\andre\\www\\drivers\\Selenium\\geckodriver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().setSize(new Dimension(1200, 765));
         driver.get(path);
@@ -37,12 +37,13 @@ public class TesteCaixasTexto {
 
         //escrevendo no campo
         driver.findElement(By.id("elementosForm:sugestoes"))
-                .sendKeys("Testando  campo de textArea.\n\n\n\nPulei duas linhas.\n\nPulei uma linha. FIM.");
+                .sendKeys("teste");
 
         //validando valores do campo.
         String valorTextArea = driver.findElement(By.id("elementosForm:sugestoes")).getAttribute("value");
-        
-        Assert.assertEquals("Testando  campo de textArea.", valorTextArea);
+
+        Assert.assertEquals("teste", valorTextArea);
+
         driver.quit();
     }
 }

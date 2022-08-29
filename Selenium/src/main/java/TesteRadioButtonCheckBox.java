@@ -3,7 +3,11 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 
 public class TesteRadioButtonCheckBox {
@@ -11,7 +15,7 @@ public class TesteRadioButtonCheckBox {
     final String PATH_WEB_PAGE = "file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html";
 
     public WebDriver instanciarNavegador(String path) {
-        System.setProperty("webdriver.gecko.driver", "/home/alencar/www/Selenium/geckodriver/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\andre\\www\\drivers\\Selenium\\geckodriver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().setSize(new Dimension(1200, 765));
         driver.get(path);
@@ -38,5 +42,40 @@ public class TesteRadioButtonCheckBox {
         Assert.assertTrue(isSelected);
 
         driver.quit();
+    }
+
+    @Test
+    public void deveInteragirComComboBox() {
+        WebDriver driver = instanciarNavegador(PATH_WEB_PAGE);
+        WebElement element = driver.findElement(By.id("elementosForm:escolaridade"));
+        Select combo = new Select(element);
+        //combo.selectByIndex(2);
+        //combo.selectByValue("2grauincomp");
+        combo.selectByVisibleText("2o grau completo");
+
+        String valorCombo = combo.getFirstSelectedOption().getText();
+        Assert.assertEquals("2o grau completo", valorCombo);
+
+        driver.quit();
+    }
+
+    @Test
+    public void deveValidarItensComComboBox() {
+        WebDriver driver = instanciarNavegador(PATH_WEB_PAGE);
+        WebElement element = driver.findElement(By.id("elementosForm:escolaridade"));
+
+        Select combo = new Select(element);
+        List<WebElement> listComboBox = combo.getOptions();
+
+        Assert.assertEquals(8, listComboBox.size());
+
+        boolean encontrou = false;
+        for(WebElement elemento : listComboBox) {
+            if (elemento.getText().equals("Mestrado")) {
+                encontrou = true;
+                break;
+            }
+        }
+        Assert.assertTrue(encontrou);
     }
 }
