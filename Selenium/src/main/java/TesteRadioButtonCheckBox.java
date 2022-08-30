@@ -117,4 +117,14 @@ public class TesteRadioButtonCheckBox {
         botao.click();
         Assert.assertEquals("Obrigado!", botao.getAttribute("value"));
     }
+
+    @Test
+    public void deveInteragirComLinks() {
+        WebDriver driver = instanciarNavegador(PATH_WEB_PAGE);
+        WebElement link = driver.findElement(By.linkText("Voltar"));
+
+        link.click();
+        boolean voltou = driver.findElement(By.id("resultado")).getText().equals("Voltou!");
+        Assert.assertTrue(voltou);
+    }
 }
