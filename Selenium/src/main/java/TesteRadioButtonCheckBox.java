@@ -78,4 +78,34 @@ public class TesteRadioButtonCheckBox {
         }
         Assert.assertTrue(encontrou);
     }
+
+    @Test
+    public void deveValidarTresElementosCorrespondentesNoComboMultiplo() {
+        WebDriver driver = instanciarNavegador(PATH_WEB_PAGE);
+        WebElement element = driver.findElement(By.id("elementosForm:esportes"));
+
+        Select combo = new Select(element);
+
+        combo.selectByVisibleText("Natacao");
+        combo.selectByVisibleText("Corrida");
+        combo.selectByVisibleText("O que eh esporte?");
+
+        boolean elementoUmCorresponde = false;
+        boolean elementoDoisCorresponde = false;
+        boolean elementoTresCorresponde = false;
+
+        List<WebElement> selecionados = combo.getAllSelectedOptions();
+        for(WebElement elemento : selecionados) {
+            if(elemento.getText().equals("Natacao")) {
+                elementoUmCorresponde = true;
+            } else if(elemento.getText().equals("Corrida")) {
+                elementoDoisCorresponde = true;
+            } else if(elemento.getText().equals("O que eh esporte?")) {
+                elementoTresCorresponde = true;
+            }
+        }
+        Assert.assertTrue(elementoUmCorresponde
+                            && elementoDoisCorresponde
+                            && elementoTresCorresponde);
+    }
 }
