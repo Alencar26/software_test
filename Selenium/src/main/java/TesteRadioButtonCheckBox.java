@@ -108,4 +108,13 @@ public class TesteRadioButtonCheckBox {
                             && elementoDoisCorresponde
                             && elementoTresCorresponde);
     }
+
+    @Test
+    public void deveInteragirComBotoes() {
+        WebDriver driver = instanciarNavegador(PATH_WEB_PAGE);
+        WebElement botao = driver.findElement(By.id("buttonSimple"));
+
+        botao.click();
+        Assert.assertEquals("Obrigado!", botao.getAttribute("value"));
+    }
 }
