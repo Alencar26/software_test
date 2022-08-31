@@ -34,4 +34,44 @@ public class TesteAlert {
         //valida se texto do textField é o mesmo do Alert.
         Assert.assertEquals("Alert Simples", textFieldNome.getAttribute("value"));
     }
+
+    @Test
+    public void deveInteragirComAlertConfirm() {
+
+        WebDriver driver = instanciarNavegador(PATH_WEB_PAGE);
+
+        WebElement alertElement = driver.findElement(By.id("confirm"));
+        alertElement.click();
+
+        Alert alert = driver.switchTo().alert();
+        String msgAlert = alert.getText();
+
+        Assert.assertEquals("Confirm Simples", msgAlert);
+        alert.accept();
+
+        String msgConfirmado = alert.getText();
+
+        Assert.assertEquals("Confirmado", msgConfirmado);
+        alert.accept();
+    }
+
+    @Test
+    public void deveInteragirComAlertConfirmNegando() {
+
+        WebDriver driver = instanciarNavegador(PATH_WEB_PAGE);
+
+        WebElement alertElement = driver.findElement(By.id("confirm"));
+        alertElement.click();
+
+        Alert alert = driver.switchTo().alert();
+        String msgAlert = alert.getText();
+
+        Assert.assertEquals("Confirm Simples", msgAlert);
+        alert.dismiss();
+
+        String msgConfirmado = alert.getText();
+
+        Assert.assertEquals("Negado", msgConfirmado);
+        alert.accept();
+    }
 }
