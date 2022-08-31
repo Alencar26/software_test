@@ -74,4 +74,45 @@ public class TesteAlert {
         Assert.assertEquals("Negado", msgConfirmado);
         alert.accept();
     }
+
+    @Test
+    public void deveInteragirComAlertPrompt() {
+
+        WebDriver driver = instanciarNavegador(PATH_WEB_PAGE);
+
+        WebElement alertElement = driver.findElement(By.id("prompt"));
+        alertElement.click();
+
+        Alert alert = driver.switchTo().alert();
+        alert.sendKeys("15");
+        alert.accept();
+
+        String textAlert = alert.getText();
+        Assert.assertEquals("Era 15?", textAlert);
+        alert.accept();
+
+        textAlert = alert.getText();
+        Assert.assertEquals(":D", textAlert);
+        alert.accept();
+    }
+
+    @Test
+    public void deveInteragirComAlertPromptNegando() {
+
+        WebDriver driver = instanciarNavegador(PATH_WEB_PAGE);
+
+        WebElement alertElement = driver.findElement(By.id("prompt"));
+        alertElement.click();
+
+        Alert alert = driver.switchTo().alert();
+        alert.dismiss();
+
+        String textAlert = alert.getText();
+        Assert.assertEquals("Era null?", textAlert);
+        alert.dismiss();
+
+        textAlert = alert.getText();
+        Assert.assertEquals(":(", textAlert);
+        alert.accept();
+    }
 }
