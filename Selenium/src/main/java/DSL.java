@@ -16,4 +16,16 @@ public class DSL {
     public String obterValorCampoText(String idCampo) {
         return driver.findElement(By.id(idCampo)).getAttribute("value");
     }
+
+    public void clicarNoCampo(String idCampo) {
+        driver.findElement(By.id(idCampo)).click();
+    }
+
+    public boolean campoEstaMarcado(String idCampo) {
+        return driver.findElement(By.id(idCampo)).isSelected();
+    }
+
+    public void selecionarCombo(String id, String valor) {
+        
+    }
 }
