@@ -45,64 +45,27 @@ public class TesteRadioButtonCheckBox {
 
     @Test
     public void deveInteragirComComboBox() {
-        WebElement element = driver.findElement(By.id("elementosForm:escolaridade"));
-        Select combo = new Select(element);
-        //combo.selectByIndex(2);
-        //combo.selectByValue("2grauincomp");
-        combo.selectByVisibleText("2o grau completo");
-
-        String valorCombo = combo.getFirstSelectedOption().getText();
-        Assert.assertEquals("2o grau completo", valorCombo);
-
-        driver.quit();
+        dsl.selecionarCombo("elementosForm:escolaridade", "2o grau completo");
+        Assert.assertEquals("2o grau completo",
+                dsl.obterValorCombo("elementosForm:escolaridade"));
     }
 
     @Test
     public void deveValidarItensComComboBox() {
-        WebElement element = driver.findElement(By.id("elementosForm:escolaridade"));
-
-        Select combo = new Select(element);
-        List<WebElement> listComboBox = combo.getOptions();
-
+        List<WebElement> listComboBox = dsl.retornaTodosOsItensComboBox("elementosForm:escolaridade");
         Assert.assertEquals(8, listComboBox.size());
-
-        boolean encontrou = false;
-        for(WebElement elemento : listComboBox) {
-            if (elemento.getText().equals("Mestrado")) {
-                encontrou = true;
-                break;
-            }
-        }
-        Assert.assertTrue(encontrou);
+        Assert.assertTrue(dsl.procurarItemNaLista(listComboBox,"Mestrado"));
     }
 
     @Test
     public void deveValidarTresElementosCorrespondentesNoComboMultiplo() {
-        WebElement element = driver.findElement(By.id("elementosForm:esportes"));
+        dsl.selecionarCombo("elementosForm:esportes","Natacao");
+        dsl.selecionarCombo("elementosForm:esportes","Corrida");
+        dsl.selecionarCombo("elementosForm:esportes","O que eh esporte?");
 
-        Select combo = new Select(element);
-
-        combo.selectByVisibleText("Natacao");
-        combo.selectByVisibleText("Corrida");
-        combo.selectByVisibleText("O que eh esporte?");
-
-        boolean elementoUmCorresponde = false;
-        boolean elementoDoisCorresponde = false;
-        boolean elementoTresCorresponde = false;
-
-        List<WebElement> selecionados = combo.getAllSelectedOptions();
-        for(WebElement elemento : selecionados) {
-            if(elemento.getText().equals("Natacao")) {
-                elementoUmCorresponde = true;
-            } else if(elemento.getText().equals("Corrida")) {
-                elementoDoisCorresponde = true;
-            } else if(elemento.getText().equals("O que eh esporte?")) {
-                elementoTresCorresponde = true;
-            }
-        }
-        Assert.assertTrue(elementoUmCorresponde
-                            && elementoDoisCorresponde
-                            && elementoTresCorresponde);
+        String[] valores = {"Natacao", "Corrida", "O que eh esporte?"};
+        List<WebElement> selecionados = dsl.retornaItensSelecionadosComboBox("elementosForm:esportes");
+        Assert.assertTrue(dsl.validarItensSelecionados(selecionados, valores));
     }
 
     @Test
