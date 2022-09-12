@@ -8,14 +8,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class TesteFormularioCompleto {
 
     final String PATH_WEB_PAGE = "file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html";
-    private DSL dsl;
+    private CampoTreinamentoPage page;
+
     @Before
     public void inicializar() {
         System.setProperty("webdriver.gecko.driver", "C:\\Users\\andre\\www\\drivers\\Selenium\\geckodriver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().setSize(new Dimension(1200, 765));
         driver.get(PATH_WEB_PAGE);
-        dsl = new DSL(driver);
+        page = new CampoTreinamentoPage(driver);
     }
 
 //    @After
@@ -26,31 +27,28 @@ public class TesteFormularioCompleto {
     @Test
     public void devePreencherFormularioESubmeterCadastro() {
         //preencher campos
-        dsl.escrever("elementosForm:nome", "André");
-        dsl.escrever("elementosForm:sobrenome", "Alencar");
-        dsl.clicarNoCampo("elementosForm:sexo:0");
-        dsl.clicarNoCampo("elementosForm:comidaFavorita:0");
-        dsl.selecionarCombo("elementosForm:escolaridade", "Superior");
-        dsl.selecionarCombo("elementosForm:esportes", "Natacao");
-        dsl.selecionarCombo("elementosForm:esportes", "Corrida");
+        page.setNome("André");
+        page.setSobrenome("Alencar");
+        page.setSexoMasculino();
+        page.setComidaFavoritaCarne();
+        page.setEscolaridade("Superior");
+        page.setEsporte("Natacao", "Corrida");
         //validar campos
-        Assert.assertEquals("André", dsl.obterValorCampoText("elementosForm:nome"));
-        Assert.assertEquals("Alencar", dsl.obterValorCampoText("elementosForm:sobrenome"));
-        Assert.assertTrue(dsl.campoEstaMarcado("elementosForm:sexo:0"));
-        Assert.assertTrue(dsl.campoEstaMarcado("elementosForm:comidaFavorita:0"));
-        Assert.assertEquals("Superior", dsl.obterValorCombo("elementosForm:escolaridade"));
-        Assert.assertTrue(dsl.validarItensSelecionados(
-                dsl.retornaItensSelecionadosComboBox("elementosForm:esportes"),
-                new String[] {"Natacao", "Corrida"}));
+        Assert.assertEquals("André", page.getNome());
+        Assert.assertEquals("Alencar", page.getSobrenome());
+        Assert.assertTrue(page.sexoIsMasculino());
+        Assert.assertTrue(page.comidaFavoritaIsCarne());
+        Assert.assertEquals("Superior", page.getEscolaridade());
+        Assert.assertTrue(page.esporteFavoritoIsNatacaoECorrida());
         //efetuar cadastro
-        dsl.clicarBotao("elementosForm:cadastrar");
+        page.cadastrar();
         //validar resultado
-        Assert.assertTrue(dsl.textoComecaCom("resultado","Cadastrado"));
-        Assert.assertTrue(dsl.textoTerminaCom("descNome","André"));
-        Assert.assertTrue(dsl.textoTerminaCom("descSobrenome","Alencar"));
-        Assert.assertTrue(dsl.textoTerminaCom("descSexo","Masculino"));
-        Assert.assertTrue(dsl.textoTerminaCom("descComida","Carne"));
-        Assert.assertTrue(dsl.textoTerminaCom("descEscolaridade","superior"));
-        Assert.assertTrue(dsl.textoTerminaCom("descEsportes","Natacao Corrida"));
+        Assert.assertTrue(page.obterResultadoCadastro("Cadastrado"));
+        Assert.assertTrue(page.obterNomeCadastro("André"));
+        Assert.assertTrue(page.obterSobrenomeCadastro("Alencar"));
+        Assert.assertTrue(page.obterSexoCadastro("Masculino"));
+        Assert.assertTrue(page.obterComidaCadastro("Carne"));
+        Assert.assertTrue(page.obterEscolaridadeCadastro("superior"));
+        Assert.assertTrue(page.obterEsporteCadastro("Natacao Corrida"));
     }
 }
