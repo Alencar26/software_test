@@ -13,8 +13,13 @@ public class DSL {
         this.driver = driver;
     }
 
+    public void escrever(By by, String texto) {
+        driver.findElement(by).clear();
+        driver.findElement(by).sendKeys(texto);
+    }
+
     public void escrever(String idCampo, String texto) {
-        driver.findElement(By.id(idCampo)).sendKeys(texto);
+        escrever(By.id(idCampo), texto);
     }
 
     public String obterValorCampoText(String idCampo) {
