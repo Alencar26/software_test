@@ -3,7 +3,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class DSL {
@@ -98,5 +97,16 @@ public class DSL {
 
     public String obterTextoBotao(String id, String atributo) {
         return driver.findElement(By.id(id)).getAttribute(atributo);
+    }
+
+    public void clicarLink(String id) {
+        driver.findElement(By.linkText(id)).click();
+    }
+
+    public String obterTexto(By by) {
+        return driver.findElement(by).getText();
+    }
+    public String obterTexto(String id) {
+        return obterTexto(By.id(id));
     }
 }
