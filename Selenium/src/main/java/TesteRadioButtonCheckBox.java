@@ -76,10 +76,7 @@ public class TesteRadioButtonCheckBox {
 
     @Test
     public void deveInteragirComLinks() {
-        WebElement link = driver.findElement(By.linkText("Voltar"));
-
-        link.click();
-        boolean voltou = driver.findElement(By.id("resultado")).getText().equals("Voltou!");
-        Assert.assertTrue(voltou);
+        dsl.clicarLink("Voltar");
+        Assert.assertEquals("Voltou!", dsl.obterTexto("resultado"));
     }
 }
