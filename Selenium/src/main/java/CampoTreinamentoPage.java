@@ -20,6 +20,10 @@ public class CampoTreinamentoPage {
         dsl.clicarNoCampo("elementosForm:sexo:0");
     }
 
+    public void setSexoFeminino() {
+        dsl.clicarNoCampo("elementosForm:sexo:1");
+    }
+
     public void setComidaFavoritaCarne() {
         dsl.clicarNoCampo("elementosForm:comidaFavorita:0");
     }
