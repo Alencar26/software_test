@@ -91,4 +91,12 @@ public class DSL {
 
         return allTrue;
     }
+
+    public void clicarBotao(String id) {
+        driver.findElement(By.id(id)).click();
+    }
+
+    public String obterTextoBotao(String id, String atributo) {
+        return driver.findElement(By.id(id)).getAttribute(atributo);
+    }
 }
