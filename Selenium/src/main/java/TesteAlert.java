@@ -115,4 +115,17 @@ public class TesteAlert {
         Assert.assertEquals(":(", textAlert);
         alert.accept();
     }
+
+    //exemplo de como usar javascript no selenium
+    @Test
+    public void testeJavascript() {
+        WebDriver driver = instanciarNavegador(PATH_WEB_PAGE);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        // js.executeScript("alert('Testando js via Selenium')");
+        js.executeScript("document.getElementById('elementosForm:nome').value = 'Escrito com javascript via selenium'");
+        js.executeScript("document.getElementById('elementosForm:sobrenome').type = 'radio'");
+
+        WebElement element = driver.findElement(By.id("elementosForm:nome"));
+        js.executeScript("arguments[0].style.border = arguments[1]", element, "solid 4px red");
+    }
 }
