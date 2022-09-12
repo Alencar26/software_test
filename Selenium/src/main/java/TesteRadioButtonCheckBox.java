@@ -70,10 +70,8 @@ public class TesteRadioButtonCheckBox {
 
     @Test
     public void deveInteragirComBotoes() {
-        WebElement botao = driver.findElement(By.id("buttonSimple"));
-
-        botao.click();
-        Assert.assertEquals("Obrigado!", botao.getAttribute("value"));
+        dsl.clicarBotao("buttonSimple");
+        Assert.assertEquals("Obrigado!", dsl.obterTextoBotao("buttonSimple", "value"));
     }
 
     @Test
