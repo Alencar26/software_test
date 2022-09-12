@@ -26,6 +26,14 @@ public class DSL {
         return driver.findElement(By.id(idCampo)).getAttribute("value");
     }
 
+    public boolean textoComecaCom(String id, String texto) {
+        return driver.findElement(By.id(id)).getText().startsWith(texto);
+    }
+
+    public boolean textoTerminaCom(String id, String texto) {
+        return driver.findElement(By.id(id)).getText().endsWith(texto);
+    }
+
     public void clicarNoCampo(String idCampo) {
         driver.findElement(By.id(idCampo)).click();
     }
