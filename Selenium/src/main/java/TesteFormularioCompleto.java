@@ -51,4 +51,9 @@ public class TesteFormularioCompleto {
         Assert.assertTrue(page.obterEscolaridadeCadastro("superior"));
         Assert.assertTrue(page.obterEsporteCadastro("Natacao Corrida"));
     }
+
+    @Test
+    public void deveClicarBotaoTabela() {
+        page.clicarBotaoTabelaRelativoAoUsuario("Maria");
+    }
 }

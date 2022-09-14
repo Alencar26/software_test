@@ -95,4 +95,8 @@ public class CampoTreinamentoPage {
                 dsl.retornaItensSelecionadosComboBox("elementosForm:esportes"),
                 new String[] {"Natacao", "Corrida"});
     }
+
+    public void clicarBotaoTabelaRelativoAoUsuario(String usuario) {
+        dsl.clicarBotaoTabela("elementosForm:tableUsuarios", "Nome", usuario, "Botao");
+    }
 }

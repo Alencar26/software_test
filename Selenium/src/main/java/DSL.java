@@ -135,4 +135,30 @@ public class DSL {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         return js.executeAsyncScript(comando, parametros);
     }
+
+    //************** TABELA com XPATH ***************
+
+    public void clicarBotaoTabela(String id, String coluna, String valor, String colunaBotao) {
+        WebElement tabela = driver.findElement(By.xpath("//*[@id='"+id+"']"));
+
+        int indiceColuna = obterIndiceColunaOuLinha(tabela,".//th", coluna);
+        int indiceLinha = obterIndiceColunaOuLinha(tabela, "./tbody/tr/td["+indiceColuna+"]", valor);
+        int indiceColunaBotao = obterIndiceColunaOuLinha(tabela,".//th", colunaBotao);
+
+        WebElement celulaTabela = tabela.findElement(By.xpath(".//tr["+indiceLinha+"]/td["+indiceColunaBotao+"]"));
+        celulaTabela.findElement(By.xpath(".//input")).click();
+
+    }
+
+    private int obterIndiceColunaOuLinha(WebElement tabela, String xpath, String valor) {
+        List<WebElement> listaElementos = tabela.findElements(By.xpath(xpath));
+        int indice = -1; //-1 segnifica que não encontrou
+        for (int i = 0; i < listaElementos.size(); i++) {
+            if (listaElementos.get(i).getText().equals(valor)) {
+                indice = i+1;
+                break;
+            }
+        }
+        return  indice;
+    }
 }
