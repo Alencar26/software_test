@@ -1,5 +1,7 @@
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class CampoTreinamentoPage {
 
     private DSL dsl;
@@ -98,5 +100,21 @@ public class CampoTreinamentoPage {
 
     public void clicarBotaoTabelaRelativoAoUsuario(String usuario) {
         dsl.clicarBotaoTabela("elementosForm:tableUsuarios", "Nome", usuario, "Botao");
+    }
+
+    public void clicarBotaoDelay() {
+        dsl.clicarBotao("buttonDelay");
+    }
+
+    public void escreverNoCampoDepoisDoDelay() {
+        dsl.escrever("novoCampo", "Campo secreto! Achei!!!");
+    }
+
+    public void esperarAteSegundos(int tempo) {
+        dsl.esperarAte(tempo, TimeUnit.SECONDS);
+    }
+
+    public void esperarElementoByIdAteSegundos(String idElemento, int segundos) {
+        dsl.esperarElementoById(idElemento, segundos);
     }
 }
