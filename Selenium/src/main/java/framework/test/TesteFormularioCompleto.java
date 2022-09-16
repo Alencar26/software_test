@@ -1,15 +1,14 @@
 package framework.test;
 
-import framework.core.DriverFactory;
+import framework.core.BaseTest;
 import framework.page.CampoTreinamentoPage;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import static framework.core.DriverFactory.getDriver;
 
-public class TesteFormularioCompleto {
+public class TesteFormularioCompleto extends BaseTest {
 
     private final String PATH_WEB_PAGE = "file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html";
     private CampoTreinamentoPage page;
@@ -20,11 +19,6 @@ public class TesteFormularioCompleto {
         page = new CampoTreinamentoPage();
     }
 
-    @After
-    public void finalizar() throws InterruptedException {
-        Thread.sleep(5000);
-        DriverFactory.killDriver();
-    }
 
     @Test
     public void devePreencherFormularioESubmeterCadastro() {

@@ -1,8 +1,7 @@
 package framework.test;
 
+import framework.core.BaseTest;
 import framework.core.DSL;
-import framework.core.DriverFactory;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +12,7 @@ import java.util.List;
 import static framework.core.DriverFactory.getDriver;
 
 
-public class TesteRadioButtonCheckBox {
+public class TesteRadioButtonCheckBox extends BaseTest {
 
     final String PATH_WEB_PAGE = "file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html";
     private DSL dsl;
@@ -24,10 +23,6 @@ public class TesteRadioButtonCheckBox {
         dsl = new DSL();
     }
 
-    @After
-    public void finalizar() {
-        DriverFactory.killDriver();
-    }
 
     @Test
     public void deveInteragirComRadioButton() {
