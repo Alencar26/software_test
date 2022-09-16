@@ -1,16 +1,10 @@
 package framework.page;
 
-import org.openqa.selenium.WebDriver;
+import framework.core.BasePage;
 
 import java.util.concurrent.TimeUnit;
 
-public class CampoTreinamentoPage {
-
-    private DSL dsl;
-
-    public CampoTreinamentoPage() {
-        this.dsl = new DSL();
-    }
+public class CampoTreinamentoPage extends BasePage {
 
     public void setNome(String nome) {
         dsl.escrever("elementosForm:nome", nome);

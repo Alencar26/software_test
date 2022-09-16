@@ -1,14 +1,8 @@
 package framework.page;
 
-import org.openqa.selenium.WebDriver;
+import framework.core.BasePage;
 
-public class PrimeFacePage {
-
-    private DSL dsl;
-
-    public PrimeFacePage() {
-        this.dsl = new DSL();
-    }
+public class PrimeFacePage extends BasePage {
 
     public void clicarRadioButtonPrimeFaces(String option) {
         dsl.clicaElemento("//*[@id='j_idt340:console']//label[contains(.,'"+option+"')]/..//span");
