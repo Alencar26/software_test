@@ -1,8 +1,12 @@
+import framework.core.DriverFactory;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import static framework.core.DriverFactory.getDriver;
 
 public class TesteSincronismo {
 
@@ -11,17 +15,14 @@ public class TesteSincronismo {
 
     @Before
     public void inicializar() {
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\andre\\www\\drivers\\Selenium\\geckodriver\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
-        driver.manage().window().setSize(new Dimension(1200, 765));
-        driver.get(PATH_WEB_PAGE);
-        page = new CampoTreinamentoPage(driver);
+        getDriver().get(PATH_WEB_PAGE);
+        page = new CampoTreinamentoPage();
     }
 
-//    @After
-//    public void finalizar() {
-//        driver.quit();
-//    }
+    @After
+    public void finalizar() {
+        DriverFactory.killDriver();
+    }
 
     @Test
     public void deveInteragirComRespostaDemorada_ESPERA_FIXA() throws InterruptedException {

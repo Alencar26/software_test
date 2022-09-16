@@ -1,9 +1,13 @@
+import framework.core.DriverFactory;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import static framework.core.DriverFactory.getDriver;
 
 public class TestePrime {
 
@@ -13,17 +17,14 @@ public class TestePrime {
 
     @Before
     public void inicializar() {
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\andre\\www\\drivers\\Selenium\\geckodriver\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
-        driver.manage().window().setSize(new Dimension(1200, 765));
-        driver.get(PATH_WEB_PAGE_COMBO);
-        page = new PrimeFacePage(driver);
+        getDriver().get(PATH_WEB_PAGE);
+        page = new PrimeFacePage();
     }
 
-//    @After
-//    public void finalizar() {
-//        driver.quit();
-//    }
+    @After
+    public void finalizar() {
+        DriverFactory.killDriver();
+    }
 
     @Test
     public void deveInteragirComRadioPrime() {

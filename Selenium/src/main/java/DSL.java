@@ -1,26 +1,19 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import static framework.core.DriverFactory.getDriver;
 
 public class DSL {
 
-    private WebDriver driver;
-
-    public DSL(WebDriver driver) {
-        this.driver = driver;
-    }
-
     public void escrever(By by, String texto) {
-        driver.findElement(by).clear();
-        driver.findElement(by).sendKeys(texto);
+        getDriver().findElement(by).clear();
+        getDriver().findElement(by).sendKeys(texto);
     }
 
     public void escrever(String idCampo, String texto) {
@@ -28,43 +21,43 @@ public class DSL {
     }
 
     public String obterValorCampoText(String idCampo) {
-        return driver.findElement(By.id(idCampo)).getAttribute("value");
+        return getDriver().findElement(By.id(idCampo)).getAttribute("value");
     }
 
     public boolean textoComecaCom(String id, String texto) {
-        return driver.findElement(By.id(id)).getText().startsWith(texto);
+        return getDriver().findElement(By.id(id)).getText().startsWith(texto);
     }
 
     public boolean textoTerminaCom(String id, String texto) {
-        return driver.findElement(By.id(id)).getText().endsWith(texto);
+        return getDriver().findElement(By.id(id)).getText().endsWith(texto);
     }
 
     public void clicarNoCampo(String idCampo) {
-        driver.findElement(By.id(idCampo)).click();
+        getDriver().findElement(By.id(idCampo)).click();
     }
 
     public boolean campoEstaMarcado(String idCampo) {
-        return driver.findElement(By.id(idCampo)).isSelected();
+        return getDriver().findElement(By.id(idCampo)).isSelected();
     }
 
     public boolean elementoPrimeFacesEstaMarcadoXPATH(String xpath) {
-        return driver.findElement(By.xpath(xpath)).getAttribute("aria-checked").equals("true");
+        return getDriver().findElement(By.xpath(xpath)).getAttribute("aria-checked").equals("true");
     }
 
     public void selecionarCombo(String id, String valor) {
-        WebElement element = driver.findElement(By.id(id));
+        WebElement element = getDriver().findElement(By.id(id));
         Select combo = new Select(element);
         combo.selectByVisibleText(valor);
     }
 
     public String obterValorCombo(String id) {
-        WebElement element = driver.findElement(By.id(id));
+        WebElement element = getDriver().findElement(By.id(id));
         Select combo = new Select(element);
         return combo.getFirstSelectedOption().getText();
     }
 
     public List<WebElement> retornaTodosOsItensComboBox(String id) {
-        WebElement element = driver.findElement(By.id(id));
+        WebElement element = getDriver().findElement(By.id(id));
         Select combo = new Select(element);
         return combo.getOptions();
     }
@@ -81,7 +74,7 @@ public class DSL {
     }
 
     public List<WebElement> retornaItensSelecionadosComboBox(String id) {
-        WebElement element = driver.findElement(By.id(id));
+        WebElement element = getDriver().findElement(By.id(id));
         Select combo = new Select(element);
         return combo.getAllSelectedOptions();
     }
@@ -114,19 +107,19 @@ public class DSL {
     }
 
     public void clicarBotao(String id) {
-        driver.findElement(By.id(id)).click();
+        getDriver().findElement(By.id(id)).click();
     }
 
     public String obterTextoBotao(String id, String atributo) {
-        return driver.findElement(By.id(id)).getAttribute(atributo);
+        return getDriver().findElement(By.id(id)).getAttribute(atributo);
     }
 
     public void clicarLink(String id) {
-        driver.findElement(By.linkText(id)).click();
+        getDriver().findElement(By.linkText(id)).click();
     }
 
     public String obterTexto(By by) {
-        return driver.findElement(by).getText();
+        return getDriver().findElement(by).getText();
     }
     public String obterTexto(String id) {
         return obterTexto(By.id(id));
@@ -135,19 +128,19 @@ public class DSL {
     //****************** JS ******************
 
     public Object executarJS(String comando, Object... parametros) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) getDriver();
         return js.executeScript(comando, parametros);
     }
 
     public Object executarJSAsync(String comando, Object... parametros) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) getDriver();
         return js.executeAsyncScript(comando, parametros);
     }
 
     //************** TABELA com XPATH ***************
 
     public void clicarBotaoTabela(String id, String coluna, String valor, String colunaBotao) {
-        WebElement tabela = driver.findElement(By.xpath("//*[@id='"+id+"']"));
+        WebElement tabela = getDriver().findElement(By.xpath("//*[@id='"+id+"']"));
 
         int indiceColuna = obterIndiceColunaOuLinha(tabela,".//th", coluna);
         int indiceLinha = obterIndiceColunaOuLinha(tabela, "./tbody/tr/td["+indiceColuna+"]", valor);
@@ -173,15 +166,15 @@ public class DSL {
     //************** XPATH **************
 
     public void clicaElemento(String xpath) {
-        driver.findElement(By.xpath(xpath)).click();
+        getDriver().findElement(By.xpath(xpath)).click();
     }
 
     public void esperarAte(int tempo, TimeUnit unidadeMedida) {
-        driver.manage().timeouts().implicitlyWait(tempo, unidadeMedida);
+        getDriver().manage().timeouts().implicitlyWait(tempo, unidadeMedida);
     }
 
     public void esperarElementoById(String idElemento ,int segundos) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(segundos));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(segundos));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id(idElemento)));
     }
 }

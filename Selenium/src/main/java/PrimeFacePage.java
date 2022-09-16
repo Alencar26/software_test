@@ -4,8 +4,8 @@ public class PrimeFacePage {
 
     private DSL dsl;
 
-    public PrimeFacePage(WebDriver drive) {
-        this.dsl = new DSL(drive);
+    public PrimeFacePage() {
+        this.dsl = new DSL();
     }
 
     public void clicarRadioButtonPrimeFaces(String option) {

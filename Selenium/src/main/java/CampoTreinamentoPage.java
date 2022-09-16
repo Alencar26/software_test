@@ -6,8 +6,8 @@ public class CampoTreinamentoPage {
 
     private DSL dsl;
 
-    public CampoTreinamentoPage(WebDriver driver) {
-        this.dsl = new DSL(driver);
+    public CampoTreinamentoPage() {
+        this.dsl = new DSL();
     }
 
     public void setNome(String nome) {
