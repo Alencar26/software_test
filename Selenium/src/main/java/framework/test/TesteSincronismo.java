@@ -1,10 +1,10 @@
+package framework.test;
+
 import framework.core.DriverFactory;
+import framework.page.CampoTreinamentoPage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static framework.core.DriverFactory.getDriver;
 
