@@ -43,6 +43,10 @@ public class DSL {
         return driver.findElement(By.id(idCampo)).isSelected();
     }
 
+    public boolean elementoPrimeFacesEstaMarcadoXPATH(String xpath) {
+        return driver.findElement(By.xpath(xpath)).getAttribute("aria-checked").equals("true");
+    }
+
     public void selecionarCombo(String id, String valor) {
         WebElement element = driver.findElement(By.id(id));
         Select combo = new Select(element);
@@ -160,5 +164,11 @@ public class DSL {
             }
         }
         return  indice;
+    }
+
+    //************** XPATH **************
+
+    public void clicaElemento(String xpath) {
+        driver.findElement(By.xpath(xpath)).click();
     }
 }
