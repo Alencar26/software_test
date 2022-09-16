@@ -1,18 +1,19 @@
 package framework.suites;
 
-import framework.test.TesteAlert;
-import framework.test.TesteCaixasTexto;
-import framework.test.TesteFormularioCompleto;
-import framework.test.TesteRadioButtonCheckBox;
+import framework.core.DriverFactory;
+import framework.test.*;
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        TesteFormularioCompleto.class,
-        TesteAlert.class,
-        TesteCaixasTexto.class,
-        TesteRadioButtonCheckBox.class
+    TesteFormularioCompleto.class,
+        TestePrime.class
 })
 public class SuiteTeste {
+    @AfterClass
+    public static void finalizaTudo() {
+        DriverFactory.killDriver();
+    }
 }

@@ -6,7 +6,9 @@ public class BaseTest {
 
     @After
     public void finalizar() throws InterruptedException {
-        Thread.sleep(5000);
-        DriverFactory.killDriver();
+        if(Propriedades.FECHAR_BROWSER) {
+            Thread.sleep(5000);
+            DriverFactory.killDriver();
+        }
     }
 }
