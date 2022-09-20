@@ -122,8 +122,16 @@ public class DSL {
         getDriver().findElement(by).click();
     }
 
-    public String obterTextoBotao(String id, String atributo) {
-        return getDriver().findElement(By.id(id)).getAttribute(atributo);
+    public String obterTextoBotaoById(String id, String atributo) {
+        return obterTextoBotao(By.id(id), atributo);
+    }
+
+    public String obterTextoBotaoByClass(String className, String atributo) {
+        return obterTextoBotao(By.className(className), atributo);
+    }
+
+    public String obterTextoBotao(By by, String atributo) {
+        return getDriver().findElement(by).getAttribute(atributo);
     }
 
     public void clicarLink(String id) {
@@ -188,5 +196,9 @@ public class DSL {
     public void esperarElementoById(String idElemento ,int segundos) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(segundos));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id(idElemento)));
+    }
+
+    public String obterMensagemDoAlert(String xpath) {
+        return getDriver().findElement(By.xpath(xpath)).getText();
     }
 }
