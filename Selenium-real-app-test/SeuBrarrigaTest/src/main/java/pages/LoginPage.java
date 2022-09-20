@@ -19,4 +19,8 @@ public class LoginPage extends BasePage {
     public String getAlertDanger() {
         return dsl.obterMensagemDoAlert("//div[@role='alert']");
     }
+
+    public String getAlertSucessLogin() {
+        return dsl.obterMensagemDoAlert("//div[.='Bem vindo, Garrafinha!']");
+    }
 }

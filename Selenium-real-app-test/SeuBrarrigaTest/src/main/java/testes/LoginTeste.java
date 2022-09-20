@@ -29,8 +29,9 @@ public class LoginTeste extends BaseTest {
 
     @Test
     public void deveEfetuarLogin() {
-        page.setEmail(user.getNome());
+        page.setEmail(user.getEmail());
         page.setSenha(user.getSenha());
         page.clicarBotaoEntrar();
+        Assert.assertEquals("Bem vindo, "+user.getNome()+"!", page.getAlertSucessLogin());
     }
 }
