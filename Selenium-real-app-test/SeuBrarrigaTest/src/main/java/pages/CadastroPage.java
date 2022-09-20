@@ -40,7 +40,11 @@ public class CadastroPage extends BasePage {
         dsl.escrever("senha", senha);
     }
 
-    public String StringgetAlertSucessCadastro() {
+    public String getAlertSucessCadastro() {
         return dsl.obterMensagemDoAlert("//div[.='Usuário inserido com sucesso']");
+    }
+
+    public String getAlertDangerEmailEmUso() {
+        return dsl.obterMensagemDoAlert("//div[.='Endereço de email já utilizado']");
     }
 }

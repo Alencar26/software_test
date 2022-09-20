@@ -43,6 +43,15 @@ public class CadastroTest extends BaseTest {
         page.setEmail(user.getEmail());
         page.setSenha(user.getSenha());
         page.clicarBotaoCadastro();
-        Assert.assertEquals("Usuário inserido com sucesso", page.StringgetAlertSucessCadastro());
+        Assert.assertEquals("Usuário inserido com sucesso", page.getAlertSucessCadastro());
+    }
+
+    @Test
+    public void deveEfetuarCadastroComEmailEmUso() {
+        page.setNome(user.getNome());
+        page.setEmail(user.getEmail());
+        page.setSenha(user.getSenha());
+        page.clicarBotaoCadastro();
+            Assert.assertEquals("Endereço de email já utilizado", page.getAlertDangerEmailEmUso());
     }
 }

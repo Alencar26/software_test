@@ -26,5 +26,11 @@ public class LoginTeste extends BaseTest {
         page.clicarBotaoEntrar();
         Assert.assertEquals("Problemas com o login do usuário", page.getAlertDanger());
     }
-    //TODO - terminar a corbertura de teste da tela de login.
+
+    @Test
+    public void deveEfetuarLogin() {
+        page.setEmail(user.getNome());
+        page.setSenha(user.getSenha());
+        page.clicarBotaoEntrar();
+    }
 }
