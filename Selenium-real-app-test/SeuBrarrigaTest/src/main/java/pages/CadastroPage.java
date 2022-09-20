@@ -28,16 +28,16 @@ public class CadastroPage extends BasePage {
         return dsl.obterMensagemDoAlert("//div[.='Senha é um campo obrigatório']");
     }
 
-    public void setNome() {
-        dsl.escrever("nome", user.getNome());
+    public void setNome(String nome) {
+        dsl.escrever("nome", nome);
     }
 
-    public void setEmail() {
-        dsl.escrever("email", user.getEmail());
+    public void setEmail(String email) {
+        dsl.escrever("email", email);
     }
 
-    public void setSenha() {
-        dsl.escrever("senha", user.getSenha());
+    public void setSenha(String senha) {
+        dsl.escrever("senha", senha);
     }
 
     public String StringgetAlertSucessCadastro() {

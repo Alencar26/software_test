@@ -39,9 +39,9 @@ public class CadastroTest extends BaseTest {
 
     @Test
     public void deveEfetuarCadastro() {
-        page.setNome();
-        page.setEmail();
-        page.setSenha();
+        page.setNome(user.getNome());
+        page.setEmail(user.getEmail());
+        page.setSenha(user.getSenha());
         page.clicarBotaoCadastro();
         Assert.assertEquals("Usuário inserido com sucesso", page.StringgetAlertSucessCadastro());
     }

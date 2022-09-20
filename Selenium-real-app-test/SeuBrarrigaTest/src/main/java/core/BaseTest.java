@@ -6,11 +6,19 @@ import org.junit.Rule;
 import org.junit.rules.TestName;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import resources.Usuario;
 
 import java.io.File;
 import java.io.IOException;
 
 public class BaseTest {
+
+    protected Usuario user;
+
+    public BaseTest() {
+        this.user = new Usuario("Garrafinha","garrafinha@email.com","g123456");
+    }
+
     @Rule
     public TestName testName = new TestName();
     @After
