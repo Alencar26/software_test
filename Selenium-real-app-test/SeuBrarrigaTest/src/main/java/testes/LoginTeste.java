@@ -26,10 +26,5 @@ public class LoginTeste extends BaseTest {
         page.clicarBotaoEntrar();
         Assert.assertEquals("Problemas com o login do usuário", page.getAlertDanger());
     }
-
-    @Test
-    public void deveClicarNaOpcaoDeCadastro() {
-        page.clicarLinkNovoUsuario();
-        Assert.assertEquals("Cadastrar", page.getTextoBotaoCadastro());
-    }
+    //TODO - terminar a corbertura de teste da tela de login.
 }

@@ -19,12 +19,4 @@ public class LoginPage extends BasePage {
     public String getAlertDanger() {
         return dsl.obterMensagemDoAlert("//div[@role='alert']");
     }
-
-    public void clicarLinkNovoUsuario() {
-        dsl.clicaElemento("//a[@href='/cadastro']");
-    }
-
-    public String getTextoBotaoCadastro() {
-        return dsl.obterTextoBotaoByClass("btn", "value");
-    }
 }
