@@ -181,6 +181,8 @@ public class DriverFactory {
               }
             try {
                   // na url abixo informe o mesmo endereço que é mostrado no terminal após rodar o grid host.
+                  //se for rodar em um servidor em núvem, na url deve ser passado a conexão via SSH.
+                  // exemplo: http://usuario:chavePrivada@192.168.0.161/wd/hub
                   driver = new RemotedWebDriver(new URL("http://192.168.0.161:4444/wd/hub"), cap);
               } catch(MalformedURLException e) {
                  System.out.println("Falha na conexão com GRID");
