@@ -98,26 +98,30 @@ Executar o teste de forma remota em várias máquinas diferentes e controla-las 
 2. Acesse o diretório onde está o Selenium GRID (será um arquivo jar);
 3. Dentro do diretório:
   a. Execute:
-  ```java
+  ```bash
     java -jar nomeDoArquivoSeleniumGRID.jar -role hub
   ```
   b. O código Acima vai executar um servido host com a porta 4444;
   c. Ao acessar localhost:4444 será possível ver o GRID rodando e as máquinas que estão conectadas;
-#### Configurando as máquinas que irão executar os teste
+#### Configurando as máquinas locais que irão executar os teste
 1. Primeiro baixe o selenium GRID;
 2. Acesse o diretório onde está o Selenium GRID (será um arquivo jar);
 3. Dentro do diretório:
   a. Execute:
-  ```java
+  ```bash
     java -jar nomeDoArquivoSeleniumGRID.jar -role node
   ```
   b.Agora a máquina está conectada no GRID na porta 5555;
   c. Para conectar outra máquina teremos que escolher outra porta:
-  ```java
+  ```bash
     java -jar nomeDoArquivoSeleniumGRID.jar -role node -port 5556
   ```
 4. Pode conectar quantas máquinas quiser.
-
+#### Configurando máquinas remotas
+1. Só vai mudar o comando final - precisa informar o endereço do grid hub
+  ```bash
+  java -jar nomeDoArquivoSeleniumGRID.jar -role node -hub http://192.168.0.161:4444/grid/register
+  ```
 - **Exemplo de refatoração no código nas classes DriverFactory e Propriedades**
 *Classe Propriedades*
 ```java
