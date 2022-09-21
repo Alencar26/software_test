@@ -42,4 +42,48 @@ Para executar os testes:
 ```bash
 mvn test
 ```
+---
+## Exemplo de refatoração da classe DriverFactory para utilizar threads
+```java
+public class DriverFactory {
+ 
+    private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<WebDriver>() {
+        @Override
+        protected synchronized WebDriver initialValue() {
+            return initDriver();
+          }
+      }
 
+    private DriverFactory() {}
+
+    public static WebDriver getDriver() {
+        return threadDriver.get();
+      }
+
+    public static WebDriver initDriver() {
+        WebDrvier driver = null;
+            switch (Propriedades.browser){
+                case FIREFOX:
+                    System.setProperty("webdriver.gecko.driver", "C:\\Users\\andre\\www\\drivers\\Selenium\\geckodriver\\geckodriver.exe");
+                    driver = new FirefoxDriver();
+                    break;
+                case CHROME:
+                    //aqui colocar o caminho do driver do selenium para Chrome.
+                    driver = new ChromeDriver(); break;
+            }
+            driver.manage().window().setSize(new Dimension(1200,765));
+        return driver;
+    }
+
+    public static void killDriver() {
+        WebDriver driver = getDriver();
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
+        if (threadDriver != null) {
+            threadDriver.remove();
+          }
+    }
+}
+```
