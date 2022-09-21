@@ -91,7 +91,7 @@ public class DriverFactory {
 ## Selenium GRID
 Executar o teste de forma remota em várias máquinas diferentes e controla-las com uma máquina host.
 
-[Link do Selenium GRID](https://www.selenium.dev/documentation/grid/getting_started/)
+[Link do Selenium GRID](https://www.selenium.dev/documentation/grid/getting_started/) | 
 [Download Selenium GRID](https://selenium-release.storage.googleapis.com/index.html)
 
 #### Como montar o "servidor host" com GRID:
