@@ -23,19 +23,18 @@ Dado que estou na home page da Amazon.com.br
 Quando acessar o menu "Eletrônicos"
     Entrar no menu "Eletrônicos"
 
-Então o título da página deve ficar "${TITLE}"
+Então o título da página deve ficar "Eletrônicos e Tecnologia | Amazon.com.br"
     Verificar se aparece a frase "Eletrônicos e Tecnologia"
-    Verificar se o título da página fica "${TITLE}"
+    Verificar se o título da página fica "Eletrônicos e Tecnologia | Amazon.com.br"
 
 E o texto "Eletrônicos e Tecnologia" deve ser exibido na página
     Verificar se aparece a frase "Eletrônicos e Tecnologia"
+E a categoria "Computadores e Informática" deve ser exibida na página
+    Verificar se aparece a categoria "Computadores e Informática"
 
-E a categoria "${NOME_CATEGORIA}" deve ser exibida na página
-    Verificar se aparece a categoria "${NOME_CATEGORIA}"
-
-Quando pesquisar pelo produto "${NOME_PRODUTO}"
-    Digitar o nome de produto "${NOME_PRODUTO}" no campo de pesquisa
+Quando pesquisar pelo produto "Xbox Series S"
+    Digitar o nome de produto "Xbox Series S" no campo de pesquisa
     Clicar no botão de pesquisa
-
-E um produto da linha "${NOME_PRODUTO}" deve ser mostrado na página
-   Verificar o resultado da pesquisa, se está listando o produto "${NOME_PRODUTO}"
+    
+Então um produto da linha "Xbox Series S" deve ser mostrado na página
+    Verificar o resultado da pesquisa, se está listando o produto "Xbox Series S"

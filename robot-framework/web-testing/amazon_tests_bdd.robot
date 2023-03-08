@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation     Essa suíte testa o site amazon.com.br
-Resource          ./amazon_resources.robot
-Test Setup        Abrir navegador
-Test Teardown     Fechar navegador
+Resource          ./amazon_resources_bdd.robot
+Test Setup        amazon_resources_bdd.Abrir navegador
+Test Teardown     amazon_resources_bdd.Fechar navegador
 
 *** Test Cases ***
 Caso de teste 1 - Acesso ao menu "Eletrônicos"

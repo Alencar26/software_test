@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230219 17:33:42.644" rpa="false" schemaversion="3">
+<suite id="s1" name="Amazon Tests Bdd" source="/home/al3ncar/www/software_test/robot-framework/web-testing/amazon_tests_bdd.robot">
+<test id="s1-t1" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="25">
+<kw name="Abrir navegador" library="amazon_resources_bdd" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230219 17:33:42.772" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230219 17:33:42.771" endtime="20230219 17:33:43.628"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230219 17:33:43.628" endtime="20230219 17:33:43.732"/>
+</kw>
+<status status="PASS" starttime="20230219 17:33:42.771" endtime="20230219 17:33:43.732"/>
+</kw>
+<kw name="Acessar a home page do site amazon.com.br" library="amazon_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230219 17:33:43.734" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<status status="PASS" starttime="20230219 17:33:43.733" endtime="20230219 17:33:52.404"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230219 17:33:52.404" endtime="20230219 17:33:52.436"/>
+</kw>
+<status status="PASS" starttime="20230219 17:33:43.733" endtime="20230219 17:33:52.436"/>
+</kw>
+<kw name="Digitar o nome de produto &quot;Xbox Series S&quot; no campo de pesquisa" library="amazon_resources" sourcename="Digitar o nome de produto &quot;${NOME_PRODUTO}&quot; no campo de pesquisa">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>text=${NOME_PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230219 17:33:52.438" level="INFO">Typing text 'Xbox Series S' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20230219 17:33:52.437" endtime="20230219 17:33:52.583"/>
+</kw>
+<status status="PASS" starttime="20230219 17:33:52.437" endtime="20230219 17:33:52.583"/>
+</kw>
+<kw name="Clicar no botão de pesquisa" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230219 17:33:52.585" level="INFO">Clicking element 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20230219 17:33:52.584" endtime="20230219 17:33:52.674"/>
+</kw>
+<status status="PASS" starttime="20230219 17:33:52.584" endtime="20230219 17:33:52.674"/>
+</kw>
+<kw name="Verificar o resultado da pesquisa se está listando o produto &quot;Console Xbox Series S&quot;" library="amazon_resources_bdd">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230219 17:33:52.678" endtime="20230219 17:33:52.680"/>
+</kw>
+<kw name="Verificar o resultado da pesquisa, se está listando o produto &quot;Console Xbox Series S&quot;" library="amazon_resources" sourcename="Verificar o resultado da pesquisa, se está listando o produto &quot;${NOME_PRODUTO}&quot;">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//span[contains(.,'RESULTADOS')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230219 17:33:52.682" endtime="20230219 17:33:54.551"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//span[contains(.,'${NOME_PRODUTO}')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230219 17:33:54.585" level="INFO">Element 'xpath=//span[contains(.,'Console Xbox Series S')]' is displayed.</msg>
+<status status="PASS" starttime="20230219 17:33:54.552" endtime="20230219 17:33:54.586"/>
+</kw>
+<status status="PASS" starttime="20230219 17:33:52.681" endtime="20230219 17:33:54.586"/>
+</kw>
+<status status="PASS" starttime="20230219 17:33:52.676" endtime="20230219 17:33:54.586"/>
+</kw>
+<kw name="Fechar navegador" library="amazon_resources_bdd" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230219 17:33:54.806" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230219 17:33:54.587" endtime="20230219 17:33:54.807"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230219 17:33:54.807" endtime="20230219 17:33:54.869"/>
+</kw>
+<status status="PASS" starttime="20230219 17:33:54.586" endtime="20230219 17:33:54.869"/>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="PASS" starttime="20230219 17:33:42.770" endtime="20230219 17:33:54.870"/>
+</test>
+<doc>Essa suíte testa o site amazon.com.br</doc>
+<status status="PASS" starttime="20230219 17:33:42.646" endtime="20230219 17:33:54.871"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">adicionar_carrinho</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon Tests Bdd">Amazon Tests Bdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
