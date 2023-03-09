@@ -41,34 +41,4 @@ Clicar no botão de pesquisa
 Verificar o resultado da pesquisa, se está listando o produto "${NOME_PRODUTO}"
     Wait Until Element Is Visible    xpath=//span[contains(.,'RESULTADOS')]
     Element Should Be Visible    xpath=//span[contains(.,'${NOME_PRODUTO}')]
-
-Verificar o resultado da pesquisa se está listando o produto "Console Xbox Series S"
-    Set Selenium Implicit Wait  5 seconds
-    Verificar o resultado da pesquisa, se está listando o produto "Console Xbox Series S"
-
-Adicionar o produto "${NOME_PRODUTO}" no carrinho
-    Click Image    xpath=//img[@alt='${NOME_PRODUTO}']
-    Click Element    id=add-to-cart-button
-
-Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
-    Wait Until Element Is Visible    xpath=//div[@id='sw-atc-details-single-container']//span[contains(.,'Adicionado ao carrinho')]
-    Element Should Be Visible    xpath=//div[@id='sw-all-product-variations']//span[contains(.,'Xbox Series S')]
-
-Validar página do carrihno de compras da Amazon.com
-    Wait Until Element Is Visible    xpath=//h1[contains(.,'Carrinho de compras')]
-    Title Should Be    title=Carrinho de compras da Amazon.com
-
-Validar se o item "Console Xbox Series S" está no carrinho de compras
-    Element Should Be Visible    xpath=//span[@class='a-truncate-cut'][contains(.,'Console Xbox Series S')]
-
-Remover o produto "Console Xbox Series S" do carrinho
-    Click Element    id=sw-gtc
-    Set Selenium Implicit Wait  5 seconds
-    Validar página do carrihno de compras da Amazon.com
-    Validar se o item "Console Xbox Series S" está no carrinho de compras
-    Click Element    xpath=//input[@value='Excluir']
-
-Verificar se o carrinho fica vazio
-    Validar página do carrihno de compras da Amazon.com
-    Set Selenium Implicit Wait  5 seconds
-    Element Should Be Visible    xpath=//h1[contains(.,'Seu carrinho de compras da Amazon está vazio.')]
+     
