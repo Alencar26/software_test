@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230309 18:03:15.830" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot-Framework" source="/home/al3ncar/www/software_test/robot-framework">
+<suite id="s1-s1" name="Api-Rest" source="/home/al3ncar/www/software_test/robot-framework/api-rest">
+<suite id="s1-s1-s1" name="Tests" source="/home/al3ncar/www/software_test/robot-framework/api-rest/tests">
+<suite id="s1-s1-s1-s1" name="Api-Testing-Usuarios" source="/home/al3ncar/www/software_test/robot-framework/api-rest/tests/api-testing-usuarios.robot">
+<test id="s1-s1-s1-s1-t1" name="CN0001 - Cadastrar novo usuario com sucesso na serveRest" line="6">
+<kw name="Criar novo usuário" library="api-testing-usuarios">
+<kw name="Generate Random String" library="String">
+<var>${palavra_aleatoria}</var>
+<arg>length=4</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20230309 18:03:15.949" level="INFO">${palavra_aleatoria} = CGPo</msg>
+<status status="PASS" starttime="20230309 18:03:15.948" endtime="20230309 18:03:15.949"/>
+</kw>
+<kw name="Convert To Lower Case" library="String">
+<var>${palavra_aleatoria}</var>
+<arg>${palavra_aleatoria}</arg>
+<doc>Converts string to lower case.</doc>
+<msg timestamp="20230309 18:03:15.950" level="INFO">${palavra_aleatoria} = cgpo</msg>
+<status status="PASS" starttime="20230309 18:03:15.949" endtime="20230309 18:03:15.951"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${EMAIL}</arg>
+<arg>${palavra_aleatoria}@gmail.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20230309 18:03:15.952" level="INFO">${EMAIL} = cgpo@gmail.com</msg>
+<status status="PASS" starttime="20230309 18:03:15.951" endtime="20230309 18:03:15.952"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${EMAIL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230309 18:03:15.952" endtime="20230309 18:03:15.953"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:15.947" endtime="20230309 18:03:15.953"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:15.946" endtime="20230309 18:03:15.955"/>
+</test>
+<status status="PASS" starttime="20230309 18:03:15.861" endtime="20230309 18:03:15.956"/>
+</suite>
+<status status="PASS" starttime="20230309 18:03:15.859" endtime="20230309 18:03:15.958"/>
+</suite>
+<status status="PASS" starttime="20230309 18:03:15.857" endtime="20230309 18:03:15.959"/>
+</suite>
+<suite id="s1-s2" name="ExemplosEstruturas" source="/home/al3ncar/www/software_test/robot-framework/ExemplosEstruturas">
+<suite id="s1-s2-s1" name="UsandoBlocosIF" source="/home/al3ncar/www/software_test/robot-framework/ExemplosEstruturas/UsandoBlocosIF.robot">
+<test id="s1-s2-s1-t1" name="01: Exemplo bloco IF" line="12">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230309 18:03:15.968" endtime="20230309 18:03:15.968"/>
+</kw>
+<if>
+<branch type="IF" condition="${STATUS} &gt; 0">
+<kw name="Logar informações quando o status for maior que zero">
+<status status="NOT RUN" starttime="20230309 18:03:15.969" endtime="20230309 18:03:15.969"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>message=Aqui executei um bloco de IF simples, pois a condição dada é VERDADEIRA!!!!</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230309 18:03:15.970" endtime="20230309 18:03:15.970"/>
+</kw>
+<status status="NOT RUN" starttime="20230309 18:03:15.969" endtime="20230309 18:03:15.970"/>
+</branch>
+<status status="PASS" starttime="20230309 18:03:15.969" endtime="20230309 18:03:15.970"/>
+</if>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230309 18:03:15.970" endtime="20230309 18:03:15.971"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:15.967" endtime="20230309 18:03:15.971"/>
+</test>
+<test id="s1-s2-s1-t2" name="02: Exemplo com dois blocos IF e ELSE" line="18">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230309 18:03:15.973" endtime="20230309 18:03:15.973"/>
+</kw>
+<if>
+<branch type="IF" condition="${STATUS} &gt; 0">
+<kw name="Logar informações quando o status for maior que zero">
+<status status="NOT RUN" starttime="20230309 18:03:15.974" endtime="20230309 18:03:15.974"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>message=Aqui executei um bloco de IF com ELSE e caiu no bloco que corresponde a condição VERDADEIRA!!!!</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230309 18:03:15.975" endtime="20230309 18:03:15.975"/>
+</kw>
+<status status="NOT RUN" starttime="20230309 18:03:15.974" endtime="20230309 18:03:15.975"/>
+</branch>
+<branch type="ELSE">
+<kw name="Logar informações quando o status for menor ou igual que zero">
+<kw name="Log" library="BuiltIn">
+<arg>O STATUS [${STATUS}] é menor ou igual a zero!</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230309 18:03:15.976" level="INFO">O STATUS [0] é menor ou igual a zero!</msg>
+<status status="PASS" starttime="20230309 18:03:15.976" endtime="20230309 18:03:15.977"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>O STATUS [${STATUS}] é menor ou igual a zero!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230309 18:03:15.977" endtime="20230309 18:03:15.978"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:15.975" endtime="20230309 18:03:15.978"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>message=Aqui executei um bloco de IF com ELSE e caiu no bloco que corresponde a condição FALSA!!!!</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230309 18:03:15.979" level="INFO">Aqui executei um bloco de IF com ELSE e caiu no bloco que corresponde a condição FALSA!!!!</msg>
+<status status="PASS" starttime="20230309 18:03:15.978" endtime="20230309 18:03:15.980"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:15.975" endtime="20230309 18:03:15.980"/>
+</branch>
+<status status="PASS" starttime="20230309 18:03:15.974" endtime="20230309 18:03:15.980"/>
+</if>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230309 18:03:15.982" endtime="20230309 18:03:15.982"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:15.972" endtime="20230309 18:03:15.983"/>
+</test>
+<test id="s1-s2-s1-t3" name="03: Exemplo blocos IF - ELSE IF" line="27">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230309 18:03:15.985" endtime="20230309 18:03:15.986"/>
+</kw>
+<if>
+<branch type="IF" condition="${STATUS} &gt; 0">
+<kw name="Logar informações quando o status for maior que zero">
+<status status="NOT RUN" starttime="20230309 18:03:15.986" endtime="20230309 18:03:15.986"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>message=Aqui executei um bloco de IFs aninhados e caiu no bloco que corresponde a condição VERDADEIRA do primeiro IF!!!!</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230309 18:03:15.987" endtime="20230309 18:03:15.987"/>
+</kw>
+<status status="NOT RUN" starttime="20230309 18:03:15.986" endtime="20230309 18:03:15.987"/>
+</branch>
+<branch type="ELSE IF" condition="${STATUS} &lt; 0">
+<kw name="Logar informações quando o status for menor que zero">
+<status status="NOT RUN" starttime="20230309 18:03:15.987" endtime="20230309 18:03:15.987"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>message=Aqui executei um bloco de IFs aninhados e caiu no bloco que corresponde a condição VERDADEIRA do segundo IF!!!!</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230309 18:03:15.987" endtime="20230309 18:03:15.988"/>
+</kw>
+<status status="NOT RUN" starttime="20230309 18:03:15.987" endtime="20230309 18:03:15.988"/>
+</branch>
+<branch type="ELSE IF" condition="${STATUS} == 0">
+<kw name="Logar informações quando o status for igual a zero">
+<kw name="Log" library="BuiltIn">
+<arg>O STATUS [${STATUS}] é igual a zero!</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230309 18:03:15.989" level="INFO">O STATUS [0] é igual a zero!</msg>
+<status status="PASS" starttime="20230309 18:03:15.988" endtime="20230309 18:03:15.989"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>O STATUS [${STATUS}] é igual a zero!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230309 18:03:15.990" endtime="20230309 18:03:15.990"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:15.988" endtime="20230309 18:03:15.990"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>message=Aqui executei um bloco de IFs aninhados e caiu no bloco que corresponde a condição VERDADEIRA do terceiro IF!!!!</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230309 18:03:15.991" level="INFO">Aqui executei um bloco de IFs aninhados e caiu no bloco que corresponde a condição VERDADEIRA do terceiro IF!!!!</msg>
+<status status="PASS" starttime="20230309 18:03:15.990" endtime="20230309 18:03:15.991"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:15.988" endtime="20230309 18:03:15.991"/>
+</branch>
+<branch type="ELSE">
+<if>
+<branch type="IF" condition="${STATUS} == ${EMPTY}">
+<kw name="Fail" library="BuiltIn">
+<arg>O STATUS está vazio!</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20230309 18:03:15.992" endtime="20230309 18:03:15.993"/>
+</kw>
+<status status="NOT RUN" starttime="20230309 18:03:15.992" endtime="20230309 18:03:15.993"/>
+</branch>
+<branch type="ELSE">
+<kw name="Fail" library="BuiltIn">
+<arg>O STATUS ${STATUS} tem um valor desconhecido!</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20230309 18:03:15.993" endtime="20230309 18:03:15.994"/>
+</kw>
+<status status="NOT RUN" starttime="20230309 18:03:15.993" endtime="20230309 18:03:15.994"/>
+</branch>
+<status status="NOT RUN" starttime="20230309 18:03:15.992" endtime="20230309 18:03:15.994"/>
+</if>
+<status status="NOT RUN" starttime="20230309 18:03:15.992" endtime="20230309 18:03:15.994"/>
+</branch>
+<status status="PASS" starttime="20230309 18:03:15.986" endtime="20230309 18:03:15.994"/>
+</if>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230309 18:03:15.994" endtime="20230309 18:03:15.995"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:15.984" endtime="20230309 18:03:15.995"/>
+</test>
+<doc>Suíte de exmeplo didático para exemplificar o uso de IF nos testes</doc>
+<status status="PASS" starttime="20230309 18:03:15.963" endtime="20230309 18:03:15.996"/>
+</suite>
+<suite id="s1-s2-s2" name="UsandoLogs" source="/home/al3ncar/www/software_test/robot-framework/ExemplosEstruturas/UsandoLogs.robot">
+<test id="s1-s2-s2-t1" name="Caso de teste exemplo 01" line="12">
+<kw name="Usando LOG para mensagens">
+<kw name="Log" library="BuiltIn">
+<arg>Minha mensagem de LOG</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230309 18:03:16.140" level="INFO">Minha mensagem de LOG</msg>
+<status status="PASS" starttime="20230309 18:03:16.140" endtime="20230309 18:03:16.140"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${VAR}</var>
+<arg>variável qualquer</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230309 18:03:16.141" level="INFO">${VAR} = variável qualquer</msg>
+<status status="PASS" starttime="20230309 18:03:16.140" endtime="20230309 18:03:16.141"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Posso logar uma ${VAR} no meio de um log</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230309 18:03:16.141" level="INFO">Posso logar uma variável qualquer no meio de um log</msg>
+<status status="PASS" starttime="20230309 18:03:16.141" endtime="20230309 18:03:16.142"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:16.139" endtime="20230309 18:03:16.142"/>
+</kw>
+<kw name="Usando LOG Console">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Posso logar na saída do console</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230309 18:03:16.143" endtime="20230309 18:03:16.144"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>Posso logar minha lista completa @{FRUTAS}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20230309 18:03:16.145" level="INFO">Posso logar minha lista completa ['maça', 'banana', 'uva', 'abacaxi']</msg>
+<status status="PASS" starttime="20230309 18:03:16.144" endtime="20230309 18:03:16.145"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Posso logar somente itens da minha lista ${FRUTAS[0]} - ${FRUTAS[1]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230309 18:03:16.147" level="INFO">Posso logar somente itens da minha lista maça - banana</msg>
+<status status="PASS" starttime="20230309 18:03:16.145" endtime="20230309 18:03:16.148"/>
+</kw>
+<status status="PASS" starttime="20230309 18:03:16.142" endtime="20230309 18:03:16.148"/>
+</kw>
+<kw name="Usando screen shots">
+<kw name="Log" library="BuiltIn">
+<arg>Nos testes web, podemos logar Screenshot com a SeleniumLibrary</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230309 18:03:16.150" level="INFO">Nos testes web, podemos logar Screenshot com a SeleniumLibrary</msg>
+<status status="PASS" starttime="20230309 18:03:16.149" endtime="20230309 18:03:16.150"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.robotizandotestes.blogspot.com.br</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230309 18:03:16.152" level="INFO">Opening browser 'chrome' to base url 'http://www.robotizandotestes.blogspot.com.br'.</msg>
+<status status="PASS" starttime="20230309 18:03:16.150" endtime="20230309 18:03:21.953"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>nome_do_meuscreenshot.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230309 18:03:21.959" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.177)
+Stacktrace:
+#0 0x55c9f618dd93 &lt;unknown&gt;
+#1 0x55c9f5f5c2d7 &lt;unknown&gt;
+#2 0x55c9f5f37655 &lt;unknown&gt;
+#3 0x55c9f5fc14ff &lt;unknown&gt;
+#4 0x55c9f5fd4066 &lt;unknown&gt;
+#5 0x55c9f5fbc353 &lt;unknown&gt;
+#6 0x55c9f5f8be40 &lt;unknown&gt;
+#7 0x55c9f5f8d038 &lt;unknown&gt;
+#8 0x55c9f61e18be &lt;unknown&gt;
+#9 0x55c9f61e58f0 &lt;unknown&gt;
+#10 0x55c9f61c5f90 &lt;unknown&gt;
+#11 0x55c9f61e6b7d &lt;unknown&gt;
+#12 0x55c9f61b7578 &lt;unknown&gt;
+#13 0x55c9f620b348 &lt;unknown&gt;
+#14 0x55c9f620b4d6 &lt;unknown&gt;
+#15 0x55c9f6225341 &lt;unknown&gt;
+#16 0x7f5c0d825b43 &lt;unknown&gt;
+</msg>
+<msg timestamp="20230309 18:03:21.961" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.177)
+Stacktrace:
+#0 0x55c9f618dd93 &lt;unknown&gt;
+#1 0x55c9f5f5c2d7 &lt;unknown&gt;
+#2 0x55c9f5f37655 &lt;unknown&gt;
+#3 0x55c9f5fc14ff &lt;unknown&gt;
+#4 0x55c9f5fd4066 &lt;unknown&gt;
+#5 0x55c9f5fbc353 &lt;unknown&gt;
+#6 0x55c9f5f8be40 &lt;unknown&gt;
+#7 0x55c9f5f8d038 &lt;unknown&gt;
+#8 0x55c9f61e18be &lt;unknown&gt;
+#9 0x55c9f61e58f0 &lt;unknown&gt;
+#10 0x55c9f61c5f90 &lt;unknown&gt;
+#11 0x55c9f61e6b7d &lt;unknown&gt;
+#12 0x55c9f61b7578 &lt;unknown&gt;
+#13 0x55c9f620b348 &lt;unknown&gt;
+#14 0x55c9f620b4d6 &lt;unknown&gt;
+#15 0x55c9f6225341 &lt;unknown&gt;
+#16 0x7f5c0d825b43 &lt;unknown&gt;
+</msg>
+<errors>
+<msg timestamp="20230309 18:03:21.959" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.177)
+Stacktrace:
+#0 0x55c9f618dd93 &lt;unknown&gt;
+#1 0x55c9f5f5c2d7 &lt;unknown&gt;
+#2 0x55c9f5f37655 &lt;unknown&gt;
+#3 0x55c9f5fc14ff &lt;unknown&gt;
+#4 0x55c9f5fd4066 &lt;unknown&gt;
+#5 0x55c9f5fbc353 &lt;unknown&gt;
+#6 0x55c9f5f8be40 &lt;unknown&gt;
+#7 0x55c9f5f8d038 &lt;unknown&gt;
+#8 0x55c9f61e18be &lt;unknown&gt;
+#9 0x55c9f61e58f0 &lt;unknown&gt;
+#10 0x55c9f61c5f90 &lt;unknown&gt;
+#11 0x55c9f61e6b7d &lt;unknown&gt;
+#12 0x55c9f61b7578 &lt;unknown&gt;
+#13 0x55c9f620b348 &lt;unknown&gt;
+#14 0x55c9f620b4d6 &lt;unknown&gt;
+#15 0x55c9f6225341 &lt;unknown&gt;
+#16 0x7f5c0d825b43 &lt;unknown&gt;
+</msg>
+<msg timestamp="20230309 18:03:31.233" level="ERROR">Execution stopped by user.</msg>
+</errors>
+</robot>
