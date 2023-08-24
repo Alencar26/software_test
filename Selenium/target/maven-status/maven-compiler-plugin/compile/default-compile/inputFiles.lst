@@ -1,0 +1,16 @@
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/test/TesteCaixasTexto.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/core/DriverFactory.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/test/PosicaoTamanho.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/test/TesteAlert.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/test/TesteGoogle.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/suites/SuiteTeste.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/core/Propriedades.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/core/DSL.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/core/BaseTest.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/test/TesteFormularioCompleto.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/core/BasePage.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/test/TestePrime.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/test/TesteSincronismo.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/page/PrimeFacePage.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/page/CampoTreinamentoPage.java
+/home/al3ncar/www/software_test/Selenium/src/main/java/framework/test/TesteRadioButtonCheckBox.java

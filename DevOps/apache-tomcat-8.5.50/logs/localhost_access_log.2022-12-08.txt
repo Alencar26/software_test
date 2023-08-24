@@ -1,0 +1,8 @@
+127.0.0.1 - admin [08/Dec/2022:13:27:34 -0300] "GET /manager/text/list HTTP/1.1" 200 258
+127.0.0.1 - admin [08/Dec/2022:13:27:34 -0300] "GET /manager/text/list HTTP/1.1" 200 258
+127.0.0.1 - admin [08/Dec/2022:13:27:34 -0300] "GET /manager/text/undeploy?path=%2Ftasks-backend HTTP/1.1" 200 72
+127.0.0.1 - admin [08/Dec/2022:13:27:40 -0300] "PUT /manager/text/deploy?path=%2Ftasks-backend HTTP/1.1" 200 70
+127.0.0.1 - admin [08/Dec/2022:13:27:53 -0300] "GET /manager/text/list HTTP/1.1" 200 258
+127.0.0.1 - admin [08/Dec/2022:13:27:53 -0300] "GET /manager/text/list HTTP/1.1" 200 258
+127.0.0.1 - admin [08/Dec/2022:13:27:53 -0300] "GET /manager/text/undeploy?path=%2Ftasks HTTP/1.1" 200 64
+127.0.0.1 - admin [08/Dec/2022:13:27:55 -0300] "PUT /manager/text/deploy?path=%2Ftasks HTTP/1.1" 200 62

@@ -1,0 +1,261 @@
+26-Nov-2022 05:53:51.617 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+26-Nov-2022 05:53:51.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+26-Nov-2022 05:53:51.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+26-Nov-2022 05:53:51.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Nov-2022 05:53:51.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-53-generic
+26-Nov-2022 05:53:51.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Nov-2022 05:53:51.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jdk/jdk-11
+26-Nov-2022 05:53:51.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11+28
+26-Nov-2022 05:53:51.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Nov-2022 05:53:51.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 05:53:51.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 05:53:51.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Nov-2022 05:53:51.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Nov-2022 05:53:51.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Nov-2022 05:53:51.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/conf/logging.properties
+26-Nov-2022 05:53:51.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Nov-2022 05:53:51.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Nov-2022 05:53:51.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Nov-2022 05:53:51.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Nov-2022 05:53:51.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Nov-2022 05:53:51.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 05:53:51.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 05:53:51.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/temp
+26-Nov-2022 05:53:51.622 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+26-Nov-2022 05:53:51.654 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 05:53:51.668 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Nov-2022 05:53:51.679 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 05:53:51.680 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Nov-2022 05:53:51.680 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 365 ms
+26-Nov-2022 05:53:51.725 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Nov-2022 05:53:51.725 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+26-Nov-2022 05:53:51.733 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT]
+26-Nov-2022 05:53:51.945 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT] has finished in [212] ms
+26-Nov-2022 05:53:51.946 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager]
+26-Nov-2022 05:53:51.972 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager] has finished in [26] ms
+26-Nov-2022 05:53:51.973 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples]
+26-Nov-2022 05:53:52.128 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples] has finished in [156] ms
+26-Nov-2022 05:53:52.128 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs]
+26-Nov-2022 05:53:52.138 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs] has finished in [10] ms
+26-Nov-2022 05:53:52.139 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager]
+26-Nov-2022 05:53:52.151 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager] has finished in [13] ms
+26-Nov-2022 05:53:52.155 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 05:53:52.161 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 05:53:52.163 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 482 ms
+26-Nov-2022 06:31:12.342 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/conf/tomcat-users.xml]
+26-Nov-2022 06:31:12.356 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.digester.Digester.fatalError Parse Fatal Error at line 47 column 1: Content is not allowed in trailing section.
+	org.xml.sax.SAXParseException; lineNumber: 47; columnNumber: 1; Content is not allowed in trailing section.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1433)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1510)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:452)
+		at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:688)
+		at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:160)
+		at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:308)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1145)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+26-Nov-2022 06:31:12.358 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Error reloading memory user database [UserDatabase] from updated source [file:/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/conf/tomcat-users.xml]
+	org.xml.sax.SAXParseException; lineNumber: 47; columnNumber: 1; Content is not allowed in trailing section.
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1510)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:452)
+		at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:688)
+		at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:160)
+		at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:308)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1145)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+26-Nov-2022 06:31:22.359 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/conf/tomcat-users.xml]
+26-Nov-2022 06:56:33.096 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+26-Nov-2022 06:56:33.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+26-Nov-2022 06:56:33.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+26-Nov-2022 06:56:33.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Nov-2022 06:56:33.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-53-generic
+26-Nov-2022 06:56:33.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Nov-2022 06:56:33.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jdk/jdk-11
+26-Nov-2022 06:56:33.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11+28
+26-Nov-2022 06:56:33.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Nov-2022 06:56:33.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 06:56:33.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 06:56:33.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Nov-2022 06:56:33.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Nov-2022 06:56:33.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Nov-2022 06:56:33.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/conf/logging.properties
+26-Nov-2022 06:56:33.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Nov-2022 06:56:33.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Nov-2022 06:56:33.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Nov-2022 06:56:33.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Nov-2022 06:56:33.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Nov-2022 06:56:33.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 06:56:33.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 06:56:33.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/temp
+26-Nov-2022 06:56:33.102 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+26-Nov-2022 06:56:33.134 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 06:56:33.144 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8001]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:995)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:848)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Endereço já em uso
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1118)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:223)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:70)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:993)
+		... 13 more
+26-Nov-2022 06:56:33.145 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 06:56:33.147 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:995)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:848)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Endereço já em uso
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1118)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:223)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:993)
+		... 13 more
+26-Nov-2022 06:56:33.147 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 366 ms
+26-Nov-2022 06:56:33.186 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Nov-2022 06:56:33.186 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+26-Nov-2022 06:56:33.195 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT]
+26-Nov-2022 06:56:33.416 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT] has finished in [220] ms
+26-Nov-2022 06:56:33.416 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager]
+26-Nov-2022 06:56:33.445 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager] has finished in [29] ms
+26-Nov-2022 06:56:33.445 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples]
+26-Nov-2022 06:56:33.617 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples] has finished in [172] ms
+26-Nov-2022 06:56:33.618 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs]
+26-Nov-2022 06:56:33.632 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs] has finished in [14] ms
+26-Nov-2022 06:56:33.632 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager]
+26-Nov-2022 06:56:33.650 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager] has finished in [18] ms
+26-Nov-2022 06:56:33.653 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 505 ms
+26-Nov-2022 06:56:33.656 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Endereço já em uso (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+26-Nov-2022 06:56:33.656 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 06:56:33.656 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 06:56:33.657 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Nov-2022 06:56:33.681 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 06:56:33.681 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 06:56:33.682 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 06:56:33.682 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 06:57:31.889 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 06:57:31.897 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 06:57:31.902 INFO [Thread-4] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Nov-2022 06:57:31.933 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 06:57:31.934 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 06:57:31.936 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 06:57:31.936 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 06:57:53.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+26-Nov-2022 06:57:53.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+26-Nov-2022 06:57:53.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+26-Nov-2022 06:57:53.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Nov-2022 06:57:53.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-53-generic
+26-Nov-2022 06:57:53.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Nov-2022 06:57:53.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jdk/jdk-11
+26-Nov-2022 06:57:53.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11+28
+26-Nov-2022 06:57:53.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Nov-2022 06:57:53.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 06:57:53.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 06:57:53.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Nov-2022 06:57:53.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Nov-2022 06:57:53.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Nov-2022 06:57:53.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/conf/logging.properties
+26-Nov-2022 06:57:53.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Nov-2022 06:57:53.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Nov-2022 06:57:53.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Nov-2022 06:57:53.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Nov-2022 06:57:53.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Nov-2022 06:57:53.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 06:57:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+26-Nov-2022 06:57:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/temp
+26-Nov-2022 06:57:53.418 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+26-Nov-2022 06:57:53.450 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 06:57:53.460 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Nov-2022 06:57:53.472 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 06:57:53.473 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Nov-2022 06:57:53.474 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 339 ms
+26-Nov-2022 06:57:53.513 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Nov-2022 06:57:53.513 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+26-Nov-2022 06:57:53.521 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT]
+26-Nov-2022 06:57:53.678 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT] has finished in [156] ms
+26-Nov-2022 06:57:53.678 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager]
+26-Nov-2022 06:57:53.697 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager] has finished in [19] ms
+26-Nov-2022 06:57:53.698 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples]
+26-Nov-2022 06:57:53.860 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples] has finished in [163] ms
+26-Nov-2022 06:57:53.861 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs]
+26-Nov-2022 06:57:53.871 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs] has finished in [10] ms
+26-Nov-2022 06:57:53.871 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager]
+26-Nov-2022 06:57:53.884 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager] has finished in [13] ms
+26-Nov-2022 06:57:53.887 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 06:57:53.893 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 06:57:53.895 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 420 ms
+26-Nov-2022 07:28:18.608 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Nov-2022 07:28:18.609 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 07:28:18.616 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 07:28:18.622 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Nov-2022 07:28:18.658 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 07:28:18.660 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Nov-2022 07:28:18.661 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+26-Nov-2022 07:28:18.662 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

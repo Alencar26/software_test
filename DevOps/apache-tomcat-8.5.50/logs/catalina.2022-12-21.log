@@ -1,0 +1,524 @@
+21-Dec-2022 10:46:22.796 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+21-Dec-2022 10:46:22.797 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+21-Dec-2022 10:46:22.797 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+21-Dec-2022 10:46:22.797 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+21-Dec-2022 10:46:22.797 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-56-generic
+21-Dec-2022 10:46:22.797 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Dec-2022 10:46:22.797 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jdk/jdk-1.8/jre
+21-Dec-2022 10:46:22.797 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_352-352-b08
+21-Dec-2022 10:46:22.798 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            OpenLogic-OpenJDK
+21-Dec-2022 10:46:22.798 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 10:46:22.798 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 10:46:22.798 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/conf/logging.properties
+21-Dec-2022 10:46:22.798 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Dec-2022 10:46:22.798 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+21-Dec-2022 10:46:22.798 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Dec-2022 10:46:22.798 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+21-Dec-2022 10:46:22.798 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+21-Dec-2022 10:46:22.798 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 10:46:22.799 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 10:46:22.799 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/temp
+21-Dec-2022 10:46:22.799 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+21-Dec-2022 10:46:22.850 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 10:46:22.858 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+21-Dec-2022 10:46:22.869 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 10:46:22.870 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+21-Dec-2022 10:46:22.870 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 353 ms
+21-Dec-2022 10:46:22.898 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+21-Dec-2022 10:46:22.898 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+21-Dec-2022 10:46:22.911 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 10:46:29.035 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+		at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+		at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+		at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+		at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:152)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:132)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:92)
+		at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:172)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 10 more
+	Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+		... 29 more
+	Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+		at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+		at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+		at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+		at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+		at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+		at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237)
+		at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+		... 33 more
+	Caused by: org.postgresql.util.PSQLException: Connection to 127.0.0.1:5433 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+		at org.postgresql.Driver.makeConnection(Driver.java:458)
+		at org.postgresql.Driver.connect(Driver.java:260)
+		at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+		at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+		at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+		at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+		at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+		at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+		at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+		at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+		... 49 more
+	Caused by: java.net.ConnectException: Conexão recusada (Connection refused)
+		at java.net.PlainSocketImpl.socketConnect(Native Method)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.net.Socket.connect(Socket.java:607)
+		at org.postgresql.core.PGStream.<init>(PGStream.java:75)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+		... 63 more
+21-Dec-2022 10:46:29.037 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+	java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+21-Dec-2022 10:46:29.037 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,126] ms
+21-Dec-2022 10:46:29.037 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 10:46:31.528 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 10:46:31.555 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,518] ms
+21-Dec-2022 10:46:31.556 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT]
+21-Dec-2022 10:46:31.566 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT] has finished in [10] ms
+21-Dec-2022 10:46:31.566 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager]
+21-Dec-2022 10:46:31.583 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager] has finished in [17] ms
+21-Dec-2022 10:46:31.584 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples]
+21-Dec-2022 10:46:31.691 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples] has finished in [107] ms
+21-Dec-2022 10:46:31.691 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs]
+21-Dec-2022 10:46:31.698 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs] has finished in [7] ms
+21-Dec-2022 10:46:31.698 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager]
+21-Dec-2022 10:46:31.707 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager] has finished in [9] ms
+21-Dec-2022 10:46:31.710 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 10:46:31.716 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 10:46:31.717 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 8846 ms
+21-Dec-2022 10:47:32.690 ADVERTÊNCIA [http-nio-8001-exec-4] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 10:47:33.211 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 10:47:33.350 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 10:47:38.235 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 10:47:38.241 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,891] ms
+21-Dec-2022 10:47:48.543 INFORMAÇÕES [http-nio-8001-exec-10] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 10:47:48.644 INFORMAÇÕES [http-nio-8001-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 10:47:51.043 INFORMAÇÕES [http-nio-8001-exec-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 10:47:51.111 INFORMAÇÕES [http-nio-8001-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,468] ms
+21-Dec-2022 11:45:36.729 ADVERTÊNCIA [http-nio-8001-exec-20] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 11:45:37.262 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 11:45:37.396 INFORMAÇÕES [http-nio-8001-exec-21] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 11:45:43.777 INFORMAÇÕES [http-nio-8001-exec-21] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 11:45:43.783 INFORMAÇÕES [http-nio-8001-exec-21] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,387] ms
+21-Dec-2022 11:45:56.459 INFORMAÇÕES [http-nio-8001-exec-22] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 11:45:56.533 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 11:45:59.058 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 11:45:59.062 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,529] ms
+21-Dec-2022 11:49:22.947 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+21-Dec-2022 11:49:22.948 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+21-Dec-2022 11:49:22.949 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+21-Dec-2022 11:49:22.949 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+21-Dec-2022 11:49:22.949 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-56-generic
+21-Dec-2022 11:49:22.949 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Dec-2022 11:49:22.949 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jdk/jdk-1.8/jre
+21-Dec-2022 11:49:22.949 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_352-352-b08
+21-Dec-2022 11:49:22.949 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            OpenLogic-OpenJDK
+21-Dec-2022 11:49:22.949 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 11:49:22.949 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 11:49:22.949 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/conf/logging.properties
+21-Dec-2022 11:49:22.950 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Dec-2022 11:49:22.950 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+21-Dec-2022 11:49:22.950 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Dec-2022 11:49:22.950 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+21-Dec-2022 11:49:22.950 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+21-Dec-2022 11:49:22.950 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 11:49:22.950 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 11:49:22.950 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/temp
+21-Dec-2022 11:49:22.950 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+21-Dec-2022 11:49:23.007 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 11:49:23.013 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+21-Dec-2022 11:49:23.020 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 11:49:23.021 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+21-Dec-2022 11:49:23.021 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 362 ms
+21-Dec-2022 11:49:23.048 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+21-Dec-2022 11:49:23.048 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+21-Dec-2022 11:49:23.063 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 11:49:28.158 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 11:49:28.194 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,130] ms
+21-Dec-2022 11:49:28.195 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 11:49:30.803 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 11:49:30.808 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,612] ms
+21-Dec-2022 11:49:30.808 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT]
+21-Dec-2022 11:49:30.817 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT] has finished in [9] ms
+21-Dec-2022 11:49:30.817 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager]
+21-Dec-2022 11:49:30.835 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager] has finished in [18] ms
+21-Dec-2022 11:49:30.835 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples]
+21-Dec-2022 11:49:30.950 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples] has finished in [115] ms
+21-Dec-2022 11:49:30.950 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs]
+21-Dec-2022 11:49:30.957 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs] has finished in [7] ms
+21-Dec-2022 11:49:30.957 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager]
+21-Dec-2022 11:49:30.970 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager] has finished in [13] ms
+21-Dec-2022 11:49:30.973 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 11:49:30.979 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 11:49:30.982 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 7960 ms
+21-Dec-2022 11:50:29.773 ADVERTÊNCIA [http-nio-8001-exec-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 11:50:30.294 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 11:50:30.539 INFORMAÇÕES [http-nio-8001-exec-8] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 11:50:35.218 INFORMAÇÕES [http-nio-8001-exec-8] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 11:50:35.227 INFORMAÇÕES [http-nio-8001-exec-8] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,688] ms
+21-Dec-2022 11:50:48.030 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 11:50:48.106 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 11:50:50.414 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 11:50:50.418 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,312] ms
+21-Dec-2022 11:58:39.742 ADVERTÊNCIA [http-nio-8001-exec-16] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 11:58:40.261 INFORMAÇÕES [http-nio-8001-exec-16] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 11:58:40.385 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 11:58:44.774 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 11:58:44.779 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,394] ms
+21-Dec-2022 11:58:55.121 INFORMAÇÕES [http-nio-8001-exec-19] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 11:58:55.197 INFORMAÇÕES [http-nio-8001-exec-28] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 11:58:57.582 INFORMAÇÕES [http-nio-8001-exec-28] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 11:58:57.585 INFORMAÇÕES [http-nio-8001-exec-28] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,389] ms
+21-Dec-2022 12:22:12.271 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+21-Dec-2022 12:22:12.271 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 12:22:12.278 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 12:22:12.283 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+21-Dec-2022 12:22:12.299 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 12:22:12.321 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 12:22:12.322 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 12:22:12.325 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 12:22:12.326 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 15:31:14.892 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+21-Dec-2022 15:31:14.893 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+21-Dec-2022 15:31:14.894 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+21-Dec-2022 15:31:14.894 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+21-Dec-2022 15:31:14.894 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-56-generic
+21-Dec-2022 15:31:14.894 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Dec-2022 15:31:14.894 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jdk/jdk-1.8/jre
+21-Dec-2022 15:31:14.894 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_352-352-b08
+21-Dec-2022 15:31:14.894 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            OpenLogic-OpenJDK
+21-Dec-2022 15:31:14.894 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 15:31:14.894 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 15:31:14.894 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/conf/logging.properties
+21-Dec-2022 15:31:14.895 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Dec-2022 15:31:14.895 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+21-Dec-2022 15:31:14.895 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Dec-2022 15:31:14.895 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+21-Dec-2022 15:31:14.895 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+21-Dec-2022 15:31:14.895 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 15:31:14.895 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 15:31:14.895 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/temp
+21-Dec-2022 15:31:14.895 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+21-Dec-2022 15:31:14.945 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 15:31:14.951 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+21-Dec-2022 15:31:14.959 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 15:31:14.960 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+21-Dec-2022 15:31:14.961 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 355 ms
+21-Dec-2022 15:31:14.987 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+21-Dec-2022 15:31:14.987 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+21-Dec-2022 15:31:15.002 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 15:31:21.112 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+		at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+		at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+		at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+		at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:152)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:132)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:92)
+		at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:172)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 10 more
+	Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+		... 29 more
+	Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+		at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+		at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+		at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+		at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+		at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+		at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237)
+		at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+		... 33 more
+	Caused by: org.postgresql.util.PSQLException: Connection to 127.0.0.1:5433 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+		at org.postgresql.Driver.makeConnection(Driver.java:458)
+		at org.postgresql.Driver.connect(Driver.java:260)
+		at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+		at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+		at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+		at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+		at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+		at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+		at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+		at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+		... 49 more
+	Caused by: java.net.ConnectException: Conexão recusada (Connection refused)
+		at java.net.PlainSocketImpl.socketConnect(Native Method)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.net.Socket.connect(Socket.java:607)
+		at org.postgresql.core.PGStream.<init>(PGStream.java:75)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+		... 63 more
+21-Dec-2022 15:31:21.114 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+	java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+21-Dec-2022 15:31:21.114 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,112] ms
+21-Dec-2022 15:31:21.114 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 15:31:23.664 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 15:31:23.688 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,573] ms
+21-Dec-2022 15:31:23.688 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT]
+21-Dec-2022 15:31:23.695 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT] has finished in [7] ms
+21-Dec-2022 15:31:23.695 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager]
+21-Dec-2022 15:31:23.708 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager] has finished in [13] ms
+21-Dec-2022 15:31:23.708 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples]
+21-Dec-2022 15:31:23.834 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples] has finished in [126] ms
+21-Dec-2022 15:31:23.834 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs]
+21-Dec-2022 15:31:23.840 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs] has finished in [6] ms
+21-Dec-2022 15:31:23.841 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager]
+21-Dec-2022 15:31:23.849 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager] has finished in [9] ms
+21-Dec-2022 15:31:23.852 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 15:31:23.858 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 15:31:23.859 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 8898 ms
+21-Dec-2022 15:32:36.204 ADVERTÊNCIA [http-nio-8001-exec-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 15:32:36.724 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 15:32:36.874 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 15:32:41.849 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 15:32:41.856 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,982] ms
+21-Dec-2022 15:32:52.121 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 15:32:52.206 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 15:32:54.600 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 15:32:54.605 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,399] ms
+21-Dec-2022 15:34:12.511 ADVERTÊNCIA [http-nio-8001-exec-18] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 15:34:13.030 INFORMAÇÕES [http-nio-8001-exec-18] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 15:34:13.170 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 15:34:18.135 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 15:34:18.141 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,971] ms
+21-Dec-2022 15:34:30.307 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 15:34:30.387 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 15:34:32.959 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 15:34:32.965 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,579] ms
+21-Dec-2022 16:41:07.986 ADVERTÊNCIA [http-nio-8001-exec-28] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 16:41:08.503 INFORMAÇÕES [http-nio-8001-exec-28] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 16:41:08.618 INFORMAÇÕES [http-nio-8001-exec-30] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 16:41:13.163 INFORMAÇÕES [http-nio-8001-exec-30] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 16:41:13.169 INFORMAÇÕES [http-nio-8001-exec-30] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,551] ms
+21-Dec-2022 16:41:23.825 INFORMAÇÕES [http-nio-8001-exec-34] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 16:41:23.889 INFORMAÇÕES [http-nio-8001-exec-37] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 16:41:26.108 INFORMAÇÕES [http-nio-8001-exec-37] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 16:41:26.113 INFORMAÇÕES [http-nio-8001-exec-37] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,224] ms
+21-Dec-2022 16:43:06.750 ADVERTÊNCIA [http-nio-8001-exec-40] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 16:43:07.270 INFORMAÇÕES [http-nio-8001-exec-40] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 16:43:07.384 INFORMAÇÕES [http-nio-8001-exec-38] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 16:43:12.076 INFORMAÇÕES [http-nio-8001-exec-38] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 16:43:12.081 INFORMAÇÕES [http-nio-8001-exec-38] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,697] ms
+21-Dec-2022 16:43:23.509 INFORMAÇÕES [http-nio-8001-exec-45] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 16:43:23.577 INFORMAÇÕES [http-nio-8001-exec-46] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 16:43:25.859 INFORMAÇÕES [http-nio-8001-exec-46] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 16:43:25.864 INFORMAÇÕES [http-nio-8001-exec-46] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,287] ms
+21-Dec-2022 16:52:29.529 ADVERTÊNCIA [http-nio-8001-exec-51] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 16:52:30.049 INFORMAÇÕES [http-nio-8001-exec-51] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 16:52:30.169 INFORMAÇÕES [http-nio-8001-exec-58] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 16:52:34.549 INFORMAÇÕES [http-nio-8001-exec-58] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 16:52:34.554 INFORMAÇÕES [http-nio-8001-exec-58] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,385] ms
+21-Dec-2022 16:52:44.939 INFORMAÇÕES [http-nio-8001-exec-53] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 16:52:45.008 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 16:52:47.142 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 16:52:47.148 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,140] ms
+21-Dec-2022 18:10:56.934 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+21-Dec-2022 18:10:56.934 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 18:10:56.940 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 18:10:56.946 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+21-Dec-2022 18:10:56.965 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 18:10:56.989 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 18:10:56.990 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 18:10:56.991 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 18:10:56.991 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 19:07:51.698 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-56-generic
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jdk/jdk-1.8/jre
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_352-352-b08
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            OpenLogic-OpenJDK
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/conf/logging.properties
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Dec-2022 19:07:51.700 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+21-Dec-2022 19:07:51.701 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+21-Dec-2022 19:07:51.701 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 19:07:51.701 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50
+21-Dec-2022 19:07:51.701 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/temp
+21-Dec-2022 19:07:51.701 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+21-Dec-2022 19:07:51.752 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 19:07:51.757 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+21-Dec-2022 19:07:51.764 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 19:07:51.765 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+21-Dec-2022 19:07:51.765 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 335 ms
+21-Dec-2022 19:07:51.787 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+21-Dec-2022 19:07:51.787 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+21-Dec-2022 19:07:51.802 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 19:07:57.241 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 19:07:57.282 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,480] ms
+21-Dec-2022 19:07:57.283 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 19:07:59.580 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 19:07:59.583 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,300] ms
+21-Dec-2022 19:07:59.584 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT]
+21-Dec-2022 19:07:59.591 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/ROOT] has finished in [7] ms
+21-Dec-2022 19:07:59.591 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager]
+21-Dec-2022 19:07:59.606 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/host-manager] has finished in [15] ms
+21-Dec-2022 19:07:59.606 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples]
+21-Dec-2022 19:07:59.709 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/examples] has finished in [102] ms
+21-Dec-2022 19:07:59.709 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs]
+21-Dec-2022 19:07:59.715 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/docs] has finished in [6] ms
+21-Dec-2022 19:07:59.716 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager]
+21-Dec-2022 19:07:59.725 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/manager] has finished in [9] ms
+21-Dec-2022 19:07:59.728 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 19:07:59.735 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 19:07:59.736 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 7971 ms
+21-Dec-2022 19:09:09.638 ADVERTÊNCIA [http-nio-8001-exec-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 19:09:10.152 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 19:09:10.301 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 19:09:14.600 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 19:09:14.608 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,308] ms
+21-Dec-2022 19:09:25.170 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 19:09:25.254 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 19:09:27.428 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 19:09:27.433 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,179] ms
+21-Dec-2022 19:22:07.219 ADVERTÊNCIA [http-nio-8001-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 19:22:07.731 INFORMAÇÕES [http-nio-8001-exec-15] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+21-Dec-2022 19:22:07.849 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+21-Dec-2022 19:22:12.118 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 19:22:12.124 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,275] ms
+21-Dec-2022 19:22:22.397 INFORMAÇÕES [http-nio-8001-exec-21] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+21-Dec-2022 19:22:22.461 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war]
+21-Dec-2022 19:22:24.510 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+21-Dec-2022 19:22:24.514 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/al3ncar/www/DevOps/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,053] ms
+21-Dec-2022 19:33:48.453 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+21-Dec-2022 19:33:48.453 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 19:33:48.459 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 19:33:48.464 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+21-Dec-2022 19:33:48.498 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+21-Dec-2022 19:33:48.522 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 19:33:48.523 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+21-Dec-2022 19:33:48.524 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+21-Dec-2022 19:33:48.525 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

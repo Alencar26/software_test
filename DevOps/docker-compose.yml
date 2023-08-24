@@ -1,0 +1,90 @@
+version: "3"
+
+services:
+    pg-tasks:
+        container_name: pg-tasks
+        image: postgres:9.6
+        ports:
+            - 5433:5432
+        environment: 
+            - POSTGRES_DB=tasks
+            - POSTGRES_PASSWORD=password
+
+#     selenium-hub:
+#         image: selenium/hub:3.141.59-zinc
+#         container_name: selenium-hub
+#         networks:
+#             - seleniumGrid
+#         ports:
+#             - "4444:4444"
+
+#     chrome:
+#         image: selenium/node-chrome:3.141.59-zinc
+#         container_name: Chrome-1
+#         networks:
+#             - seleniumGrid
+#         depends_on:
+#             - selenium-hub
+#         environment:
+#             - HUB_HOST=selenium-hub
+#             - HUB_PORT=4444
+#             - NODE_MAX_INSTANCES=2
+#             - NODE_MAX_SESSIONS=2
+
+#     chrome2:
+#         image: selenium/node-chrome:3.141.59-zinc
+#         container_name: Chrome-2
+#         networks:
+#             - seleniumGrid
+#         depends_on:
+#             - selenium-hub
+#         environment:
+#             - HUB_HOST=selenium-hub
+#             - HUB_PORT=4444
+#             - NODE_MAX_INSTANCES=2
+#             - NODE_MAX_SESSIONS=2
+
+# networks:
+#     seleniumGrid:
+            
+#     sonarqube:
+#         container_name: sonar
+#         image: sonarqube:7.9.3-community
+#         depends_on:
+#             - pg-sonar
+#         environment:
+#             SONAR_JDBC_URL: dbc:postgresql://pg-sonar:5432/sonar
+#             SONAR_JDBC_USERNAME: sonar
+#             SONAR_JDBC_PASSWORDS: sonar
+#         volumes:
+#             - sonarqube_data:/opt/sonarqube/data
+#             - sonarqube_conf:/opt/sonarqube/conf
+#             - sonarqube_extensions:/opt/sonarqube/extensions
+#             - sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
+#         ports:
+#             - "9000:9000"
+#         networks:
+#             - sonarnet
+
+#     pg-sonar:
+#         container_name: pg-sonar
+#         image: postgres:9.6
+#         environment:
+#             POSTGRES_USER: sonar
+#             POSTGRES_PASSWORD: sonar
+#         volumes:
+#             - postgresql:/var/lib/postgresql
+#             - postgresql_data:/var/lib/postgresql/data
+#         networks:
+#             - sonarnet
+
+# networks:
+#     sonarnet:
+
+# volumes:
+#     sonarqube_conf:
+#     sonarqube_data:
+#     sonarqube_extensions:
+#     sonarqube_bundled-plugins:
+#     postgresql:
+#     postgresql_data:

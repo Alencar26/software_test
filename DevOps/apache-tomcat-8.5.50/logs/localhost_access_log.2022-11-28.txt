@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [28/Nov/2022:16:06:18 -0300] "GET / HTTP/1.1" 200 11215
+0:0:0:0:0:0:0:1 - admin [28/Nov/2022:16:07:13 -0300] "GET /manager/html HTTP/1.1" 200 20952
+0:0:0:0:0:0:0:1 - admin [28/Nov/2022:16:07:23 -0300] "POST /manager/html/start?path=/tasks-backend&org.apache.catalina.filters.CSRF_NONCE=E64511A7B22536CD6B9BF5236B5F626A HTTP/1.1" 200 21611
+127.0.0.1 - - [28/Nov/2022:16:08:55 -0300] "GET /tasks-backend/todo HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [28/Nov/2022:16:08:55 -0300] "GET /tasks/ HTTP/1.1" 200 810
+0:0:0:0:0:0:0:1 - - [28/Nov/2022:16:08:55 -0300] "GET /tasks/js/bootstrap.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Nov/2022:16:08:55 -0300] "GET /tasks/css/bootstrap.min.css HTTP/1.1" 200 159515
+0:0:0:0:0:0:0:1 - - [28/Nov/2022:16:08:56 -0300] "GET /tasks/add HTTP/1.1" 200 1201
+127.0.0.1 - - [28/Nov/2022:16:09:03 -0300] "GET /tasks-backend/todo HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [28/Nov/2022:16:09:03 -0300] "GET /tasks/ HTTP/1.1" 200 810
+0:0:0:0:0:0:0:1 - admin [28/Nov/2022:16:09:16 -0300] "POST /manager/html/reload?path=/tasks-backend&org.apache.catalina.filters.CSRF_NONCE=FDA067F6733F48B7D69D969DA47F1483 HTTP/1.1" 200 21612
+0:0:0:0:0:0:0:1 - admin [28/Nov/2022:16:09:20 -0300] "POST /manager/html/reload?path=/tasks&org.apache.catalina.filters.CSRF_NONCE=26C57A336D7CA97E53767D012EBFFA4D HTTP/1.1" 200 21604
+127.0.0.1 - - [28/Nov/2022:16:09:22 -0300] "GET /tasks-backend/todo HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [28/Nov/2022:16:09:22 -0300] "GET /tasks/ HTTP/1.1" 200 810
+0:0:0:0:0:0:0:1 - - [28/Nov/2022:16:09:24 -0300] "GET /tasks/add HTTP/1.1" 200 1201
